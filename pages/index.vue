@@ -1,5 +1,5 @@
 <template lang="">
-    <div>
+    <div class="font-body">
         home
     </div>
 </template>
