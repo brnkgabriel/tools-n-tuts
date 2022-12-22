@@ -1,0 +1,48 @@
+#1 - website layout samples: https://www.coreldraw.com/en/product/vector/#features
+
+#2 - background slider: https://codepen.io/ccrch/embed/raGVeL?height=265&theme-id=light&default-tab=css%2Cresult&user=ccrch&slug-hash=raGVeL&pen-title=Banner%20slider%20with%20progress%20bar&name=cp_embed_9
+
+#3 - nuxt 3 + firebase: https://github.com/provabeer/2022-webapp-nuxt3
+
+#4 - todo:
+- make cookie reactive
+- add signup
+
+#5 - nuxt 3 + PWA out of the box integration: https://github.com/nuxt/framework/discussions/1823
+
+#6 - pwa module: https://vite-pwa-org.netlify.app/guide/
+
+#7 - pwa module: https://github.com/kevinmarrec/nuxt-pwa-module
+
+#8 - you always subscribe to pinia state to get reactive updates on DOM: Thank you Jesus
+const store = useAuthStore()
+const loggedIn = ref(store.user)
+store.$subscribe((mutation, state) => {
+  console.log("from dropdown state.user", state.user)
+  loggedIn.value = state.user
+})
+
+#9 - Always put the initial value from pinia store inside the onMounted hook
+
+#10 - mobile date pickers
+    - https://codepen.io/FilipVitas/pen/mLZepb
+    - https://codepen.io/maxakohler/pen/JZgXxe
+    - https://code.tutsplus.com/tutorials/best-javascript-date-picker-widgets--cms-39659
+    - https://demo.mobiscroll.com/javascript/datetime/usage-on-input-or-inline#
+    - https://www.plus-one.tech/vue-drumroll-datetime-picker/
+
+
+todo: ensure we find where to update the values of useState
+
+#11 - When deploying to vercel with api routes, ensure you use <npm run build> instead of <nuxt generate> so vercel detects your api route
+
+#12 - For PWA to be installable, make sure you set the workbox object to blank, let it set the default options.
+    workbox: {
+      // the way to enable pwa is to remove "enabled: false" from below
+      // enabled: false
+    },
+
+
+- image cropper sources:
+  - https://cropper.chengpeiquan.com/quick-start.html
+  - https://github.com/chengpeiquan/vue-picture-cropper/blob/main/docs/components/WithCompositionAPI.vue
