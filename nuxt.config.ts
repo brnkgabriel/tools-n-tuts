@@ -107,12 +107,5 @@ export default {
         }
       ]
     },
-    meta: {
-      name: "Prayer Cell",
-      author: "Remnant Christian Network Lagos",
-      description: "Remnant Christian Network Lagos - Oko Oba Prayer Cell",
-      theme_color: "#fff",
-      lang: "en"
-    }
   },
 }
