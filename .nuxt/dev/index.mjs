@@ -21,7 +21,7 @@ import unstorage_47drivers_47fs from 'file://C:/Users/JUMIA-4408/Documents/1-324
 import defu from 'file://C:/Users/JUMIA-4408/Documents/1-3243/2-Me/LANRE/2-WEBSITES/NUXTJS/tools-n-tuts/node_modules/defu/dist/defu.mjs';
 import { toRouteMatcher, createRouter } from 'file://C:/Users/JUMIA-4408/Documents/1-3243/2-Me/LANRE/2-WEBSITES/NUXTJS/tools-n-tuts/node_modules/radix3/dist/index.mjs';
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routeRules":{"/__nuxt_error":{"cache":false}},"envPrefix":"NUXT_"},"public":{"pwaManifest":{"name":"Tools n Tuts","short_name":"Tools n Tuts","description":"The best of the open source tools and tutorials you need for work","lang":"en","start_url":"/","display":"standalone","background_color":"#fff","theme_color":"#fff","icons":[{"src":"/icon-192x192.png","sizes":"192x192","type":"image/png","purpose":"maskable"},{"src":"/icon-256x256.png","sizes":"256x256","type":"image/png","purpose":"maskable"},{"src":"/icon-384x384.png","sizes":"384x384","type":"image/png","purpose":"maskable"},{"src":"/icon-512x512.png","sizes":"512x512","type":"image/png","purpose":"maskable"},{"src":"/_nuxt/icons/64x64.png","type":"image/png","sizes":"64x64","purpose":"any"},{"src":"/_nuxt/icons/64x64.maskable.png","type":"image/png","sizes":"64x64","purpose":"maskable"},{"src":"/_nuxt/icons/120x120.png","type":"image/png","sizes":"120x120","purpose":"any"},{"src":"/_nuxt/icons/120x120.maskable.png","type":"image/png","sizes":"120x120","purpose":"maskable"},{"src":"/_nuxt/icons/144x144.png","type":"image/png","sizes":"144x144","purpose":"any"},{"src":"/_nuxt/icons/144x144.maskable.png","type":"image/png","sizes":"144x144","purpose":"maskable"},{"src":"/_nuxt/icons/152x152.png","type":"image/png","sizes":"152x152","purpose":"any"},{"src":"/_nuxt/icons/152x152.maskable.png","type":"image/png","sizes":"152x152","purpose":"maskable"},{"src":"/_nuxt/icons/192x192.png","type":"image/png","sizes":"192x192","purpose":"any"},{"src":"/_nuxt/icons/192x192.maskable.png","type":"image/png","sizes":"192x192","purpose":"maskable"},{"src":"/_nuxt/icons/384x384.png","type":"image/png","sizes":"384x384","purpose":"any"},{"src":"/_nuxt/icons/384x384.maskable.png","type":"image/png","sizes":"384x384","purpose":"maskable"},{"src":"/_nuxt/icons/512x512.png","type":"image/png","sizes":"512x512","purpose":"any"},{"src":"/_nuxt/icons/512x512.maskable.png","type":"image/png","sizes":"512x512","purpose":"maskable"}],"scope":"/"},"supabase":{"url":"https://esoxpbrbxabdqbplpgnk.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVzb3hwYnJieGFiZHFicGxwZ25rIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzA5MzA4OTcsImV4cCI6MTk4NjUwNjg5N30.S0lPgS84K6ONNhEOKFJrvw4TiiwYqru5RxB_Tr5TDyc","client":{},"redirect":false,"cookies":{"name":"sb","lifetime":28800,"domain":"","path":"/","sameSite":"lax"}}},"supabase":{}};
+const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routeRules":{"/__nuxt_error":{"cache":false}},"envPrefix":"NUXT_"},"public":{"pwaManifest":{"name":"Tools n Tuts","short_name":"TnTs","description":"The best of the open source tools and tutorials you need for work","lang":"en","start_url":"/","display":"standalone","background_color":"#fff","theme_color":"#fff","icons":[{"src":"/icon-192x192.png","sizes":"192x192","type":"image/png","purpose":"maskable"},{"src":"/icon-256x256.png","sizes":"256x256","type":"image/png","purpose":"maskable"},{"src":"/icon-384x384.png","sizes":"384x384","type":"image/png","purpose":"maskable"},{"src":"/icon-512x512.png","sizes":"512x512","type":"image/png","purpose":"maskable"},{"src":"/_nuxt/icons/64x64.png","type":"image/png","sizes":"64x64","purpose":"any"},{"src":"/_nuxt/icons/64x64.maskable.png","type":"image/png","sizes":"64x64","purpose":"maskable"},{"src":"/_nuxt/icons/120x120.png","type":"image/png","sizes":"120x120","purpose":"any"},{"src":"/_nuxt/icons/120x120.maskable.png","type":"image/png","sizes":"120x120","purpose":"maskable"},{"src":"/_nuxt/icons/144x144.png","type":"image/png","sizes":"144x144","purpose":"any"},{"src":"/_nuxt/icons/144x144.maskable.png","type":"image/png","sizes":"144x144","purpose":"maskable"},{"src":"/_nuxt/icons/152x152.png","type":"image/png","sizes":"152x152","purpose":"any"},{"src":"/_nuxt/icons/152x152.maskable.png","type":"image/png","sizes":"152x152","purpose":"maskable"},{"src":"/_nuxt/icons/192x192.png","type":"image/png","sizes":"192x192","purpose":"any"},{"src":"/_nuxt/icons/192x192.maskable.png","type":"image/png","sizes":"192x192","purpose":"maskable"},{"src":"/_nuxt/icons/384x384.png","type":"image/png","sizes":"384x384","purpose":"any"},{"src":"/_nuxt/icons/384x384.maskable.png","type":"image/png","sizes":"384x384","purpose":"maskable"},{"src":"/_nuxt/icons/512x512.png","type":"image/png","sizes":"512x512","purpose":"any"},{"src":"/_nuxt/icons/512x512.maskable.png","type":"image/png","sizes":"512x512","purpose":"maskable"}],"scope":"/"},"supabase":{"url":"https://esoxpbrbxabdqbplpgnk.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVzb3hwYnJieGFiZHFicGxwZ25rIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzA5MzA4OTcsImV4cCI6MTk4NjUwNjg5N30.S0lPgS84K6ONNhEOKFJrvw4TiiwYqru5RxB_Tr5TDyc","client":{},"redirect":false,"cookies":{"name":"sb","lifetime":28800,"domain":"","path":"/","sameSite":"lax"}}},"supabase":{}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {
@@ -78,7 +78,7 @@ const timingMiddleware = eventHandler((event) => {
   }.bind(event.res);
 });
 
-const serverAssets = [{"baseName":"server","dir":"C:/Users/JUMIA-4408/Documents/1-3243/2-Me/LANRE/2-WEBSITES/NUXTJS/tools-n-tuts/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"C:/Users/JUMIA-4408/Documents/1-3243/2-Me/LANRE/2-WEBSITES/NUXTJS/tools-n-tuts/src/server/assets"}];
 
 const assets = createStorage();
 
@@ -93,7 +93,7 @@ const useStorage = () => storage;
 storage.mount('/assets', assets);
 
 storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\JUMIA-4408\\Documents\\1-3243\\2-Me\\LANRE\\2-WEBSITES\\NUXTJS\\tools-n-tuts","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\JUMIA-4408\\Documents\\1-3243\\2-Me\\LANRE\\2-WEBSITES\\NUXTJS\\tools-n-tuts\\server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\JUMIA-4408\\Documents\\1-3243\\2-Me\\LANRE\\2-WEBSITES\\NUXTJS\\tools-n-tuts\\src\\server","ignore":["**/node_modules/**","**/.git/**"]}));
 storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\JUMIA-4408\\Documents\\1-3243\\2-Me\\LANRE\\2-WEBSITES\\NUXTJS\\tools-n-tuts\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
 storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\JUMIA-4408\\Documents\\1-3243\\2-Me\\LANRE\\2-WEBSITES\\NUXTJS\\tools-n-tuts\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
@@ -500,9 +500,11 @@ const _7Tjr1G = defineEventHandler(async (event) => {
   return "auth cookie set";
 });
 
+const _lazy_HNjv2Z = () => Promise.resolve().then(function () { return gData_get$1; });
 const _lazy_JF4fht = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
+  { route: '/api/g-data', handler: _lazy_HNjv2Z, lazy: true, middleware: false, method: "get" },
   { route: '/__nuxt_error', handler: _lazy_JF4fht, lazy: true, middleware: false, method: undefined },
   { route: '/manifest.json', handler: _QGXjtG, lazy: false, middleware: false, method: undefined },
   { route: '/api/_supabase/session', handler: _7Tjr1G, lazy: false, middleware: false, method: undefined },
@@ -581,6 +583,25 @@ server.listen(listenAddress, () => {
   process.on("unhandledRejection", (err) => console.error("[nitro] [dev] [unhandledRejection]", err));
   process.on("uncaughtException", (err) => console.error("[nitro] [dev] [uncaughtException]", err));
 }
+
+const gData_get = defineEventHandler(async (event) => {
+  try {
+    const query = getQuery(event);
+    console.log(query);
+    const path = query.path;
+    const url = `https://script.google.com/macros/s/AKfycbyzfNWhPnxgEcbt4tSiCMKsoSurroruxBs2w2DpnXIMlRI-unma1s4bPBK8BnvA4Xbi/exec?path=${path}`;
+    const response = await fetch(url);
+    const data = response.json();
+    return data;
+  } catch (error) {
+    return { error: error.message };
+  }
+});
+
+const gData_get$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  'default': gData_get
+});
 
 const appRootId = "__nuxt";
 
@@ -777,7 +798,7 @@ const renderer$1 = /*#__PURE__*/Object.freeze({
   'default': renderer
 });
 
-const _virtual__headStatic = {"headTags":"<meta charset=\"utf-8\">\n<title>Nuxt PWA</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta name=\"mobile-web-app-capable\" content=\"yes\">\n<meta name=\"apple-mobile-web-app-title\" content=\"Nuxt PWA\">\n<meta name=\"description\" content=\"Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.\">\n<meta name=\"theme-color\" content=\"#fff\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:title\" content=\"Nuxt PWA\">\n<meta property=\"og:site_name\" content=\"Nuxt PWA\">\n<meta property=\"og:description\" content=\"Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.\">\n<meta name=\"twitter:card\" content=\"summary\">\n<link rel=\"icon\" href=\"/icon-192x192.png\">\n<link rel=\"apple-touch-icon\" href=\"/_nuxt/icons/512x512.maskable.png\" sizes=\"512x512\">\n<link rel=\"manifest\" href=\"/manifest.json\">","bodyTags":"","bodyTagsOpen":"","htmlAttrs":" lang=\"en\"","bodyAttrs":""};
+const _virtual__headStatic = {"headTags":"<meta charset=\"utf-8\">\n<title>ToolsNTuts</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta name=\"mobile-web-app-capable\" content=\"yes\">\n<meta name=\"apple-mobile-web-app-title\" content=\"ToolsNTuts\">\n<meta name=\"description\" content=\"Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.\">\n<meta name=\"theme-color\" content=\"#fff\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:title\" content=\"ToolsNTuts\">\n<meta property=\"og:site_name\" content=\"ToolsNTuts\">\n<meta property=\"og:description\" content=\"Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.\">\n<meta name=\"twitter:card\" content=\"summary\">\n<link rel=\"icon\" href=\"/icon-192x192.png\">\n<link rel=\"apple-touch-icon\" href=\"/_nuxt/icons/512x512.maskable.png\" sizes=\"512x512\">\n<link rel=\"manifest\" href=\"/manifest.json\">","bodyTags":"","bodyTagsOpen":"","htmlAttrs":" lang=\"en\"","bodyAttrs":""};
 
 const _virtual__headStatic$1 = /*#__PURE__*/Object.freeze({
   __proto__: null,

@@ -46,3 +46,5 @@ todo: ensure we find where to update the values of useState
 - image cropper sources:
   - https://cropper.chengpeiquan.com/quick-start.html
   - https://github.com/chengpeiquan/vue-picture-cropper/blob/main/docs/components/WithCompositionAPI.vue
+
+api: https://script.google.com/macros/s/AKfycbyzfNWhPnxgEcbt4tSiCMKsoSurroruxBs2w2DpnXIMlRI-unma1s4bPBK8BnvA4Xbi/exec

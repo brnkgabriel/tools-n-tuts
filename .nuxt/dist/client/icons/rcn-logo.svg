@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 608 333" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-93.4531,-54.3714)">
+        <g transform="matrix(1,0,0,1,2.73708,0.742892)">
+            <rect x="242" y="54" width="14" height="333" style="fill:rgb(23,20,61);"/>
+        </g>
+        <g>
+            <g transform="matrix(5.75604,0,0,5.75604,-1349.51,-705.425)">
+                <text x="282.918px" y="143.059px" style="font-family:'Poppins-SemiBold', 'Poppins';font-weight:600;font-size:15.752px;fill:rgb(23,20,61);">Remnant</text>
+            </g>
+            <g transform="matrix(5.75604,0,0,5.75604,-1346.43,-612.445)">
+                <text x="282.918px" y="143.059px" style="font-family:'Poppins-SemiBold', 'Poppins';font-weight:600;font-size:15.752px;fill:rgb(23,20,61);">Christian</text>
+            </g>
+            <g transform="matrix(5.75604,0,0,5.75604,-1349.51,-523.455)">
+                <text x="282.918px" y="143.059px" style="font-family:'Poppins-SemiBold', 'Poppins';font-weight:600;font-size:15.752px;fill:rgb(23,20,61);">Network</text>
+            </g>
+            <g transform="matrix(5.75604,0,0,5.75604,-1349.61,-436.355)">
+                <text x="282.918px" y="143.059px" style="font-family:'Poppins-SemiBold', 'Poppins';font-weight:600;font-size:16px;fill:rgb(253,108,3);">LAGOS</text>
+            </g>
+        </g>
+        <g>
+            <g transform="matrix(0.424658,0,0,0.424658,46.9255,38.2877)">
+                <g transform="matrix(1,0,0,1,-0.0507115,-1)">
+                    <path d="M241.059,38C241.059,38 245.657,83.86 276,118C296.306,140.847 346.196,172.206 370,232C391.124,285.061 364,346 364,346C364,346 354.536,296.357 330,266C309.51,240.648 240,172 240,172C240,172 227.669,183.777 245,213C266.005,248.418 320.008,290.42 331,336C341.348,378.909 311,417 311,417C311,417 310.264,388.008 288,363C211.762,277.365 167.96,259.03 176,172C179.628,132.728 197.543,110.488 213.465,84.948C228.717,60.482 241.059,38 241.059,38" style="fill:rgb(247,17,3);stroke:black;stroke-opacity:0;stroke-width:2.35px;"/>
+                </g>
+                <path d="M151,221C151,221 151.285,240.035 182,283C218.059,333.44 271.049,379.687 280.502,416C288.608,447.135 272,475 272,475C272,475 259.285,442.535 215,403C153.902,348.456 130.758,313.496 134,274C136.94,238.183 151,221 151,221" style="fill:rgb(253,108,3);"/>
+            </g>
+            <g>
+                <g transform="matrix(1,0,0,1,-2.75737,-3)">
+                    <circle cx="113.5" cy="271.5" r="15.5" style="fill:rgb(23,20,61);"/>
+                </g>
+                <g transform="matrix(1,0,0,1,42.2426,-3)">
+                    <circle cx="113.5" cy="271.5" r="15.5" style="fill:rgb(23,20,61);"/>
+                </g>
+                <g transform="matrix(1,0,0,1,87.2426,-3)">
+                    <circle cx="113.5" cy="271.5" r="15.5" style="fill:rgb(23,20,61);"/>
+                </g>
+                <g transform="matrix(1.12903,0,0,1,-20.0958,1)">
+                    <path d="M171.243,301C171.243,297.137 168.465,294 165.043,294L146.443,294C143.021,294 140.243,297.137 140.243,301L140.243,379C140.243,382.863 143.021,386 146.443,386L165.043,386C168.465,386 171.243,382.863 171.243,379L171.243,301Z" style="fill:rgb(23,20,61);"/>
+                </g>
+                <g transform="matrix(1.00698,0,0,1,-1.27915,0)">
+                    <path d="M218,303.75C218,298.921 214.106,295 209.311,295L197.146,295C189.472,295 183.243,301.273 183.243,309L183.243,378.25C183.243,383.079 187.136,387 191.932,387L204.097,387C211.77,387 218,380.727 218,373L218,303.75Z" style="fill:rgb(23,20,61);"/>
+                </g>
+                <g transform="matrix(-1.00698,0,0,1,312.764,0)">
+                    <path d="M218,303.75C218,298.921 214.106,295 209.311,295L197.146,295C189.472,295 183.243,301.273 183.243,309L183.243,378.25C183.243,383.079 187.136,387 191.932,387L204.097,387C211.77,387 218,380.727 218,373L218,303.75Z" style="fill:rgb(23,20,61);"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

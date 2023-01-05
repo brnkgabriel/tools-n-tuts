@@ -5,7 +5,7 @@
 </template>
 <script setup lang="ts">
 
+useHead({
+    title: "TnTs"
+})
 </script>
-<style lang="">
-    
-</style>

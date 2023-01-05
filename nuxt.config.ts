@@ -5,8 +5,9 @@
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  srcDir: "src",
   head: {
-    title: 'dt-space',
+    title: 'TnTs',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -15,12 +16,6 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ],
-    script: [
-      {
-        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3694921149586901",
-        async: true
-      }
     ]
   },
 
@@ -78,7 +73,7 @@ export default {
       scope: "/",
       start_url: "/",
       name: "Tools n Tuts",
-      short_name: "Tools n Tuts",
+      short_name: "TnTs",
       description: "The best of the open source tools and tutorials you need for work",
       icons: [
         {

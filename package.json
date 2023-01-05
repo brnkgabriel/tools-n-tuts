@@ -1,5 +1,6 @@
 {
   "private": true,
+  "name": "ToolsNTuts",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
