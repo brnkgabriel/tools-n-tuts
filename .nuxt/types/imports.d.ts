@@ -6,6 +6,7 @@ declare global {
   const clearError: typeof import('../../node_modules/nuxt/dist/app')['clearError']
   const clearNuxtData: typeof import('../../node_modules/nuxt/dist/app')['clearNuxtData']
   const computed: typeof import('vue')['computed']
+  const constants: typeof import('../../src/composables/index')['constants']
   const createError: typeof import('../../node_modules/nuxt/dist/app')['createError']
   const customRef: typeof import('vue')['customRef']
   const defineAppConfig: typeof import('../../node_modules/nuxt/dist/app')['defineAppConfig']
@@ -101,6 +102,7 @@ declare global {
   const useSupabaseToken: typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseToken')['useSupabaseToken']
   const useSupabaseUser: typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseUser')['useSupabaseUser']
   const useTransitionState: typeof import('vue')['useTransitionState']
+  const useUi: typeof import('../../src/composables/index')['useUi']
   const watch: typeof import('vue')['watch']
   const watchEffect: typeof import('vue')['watchEffect']
   const withCtx: typeof import('vue')['withCtx']
@@ -119,6 +121,7 @@ declare module 'vue' {
     readonly clearError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['clearError']>
     readonly clearNuxtData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['clearNuxtData']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
+    readonly constants: UnwrapRef<typeof import('../../src/composables/index')['constants']>
     readonly createError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['createError']>
     readonly customRef: UnwrapRef<typeof import('vue')['customRef']>
     readonly defineAppConfig: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['defineAppConfig']>
@@ -214,6 +217,7 @@ declare module 'vue' {
     readonly useSupabaseToken: UnwrapRef<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseToken')['useSupabaseToken']>
     readonly useSupabaseUser: UnwrapRef<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseUser')['useSupabaseUser']>
     readonly useTransitionState: UnwrapRef<typeof import('vue')['useTransitionState']>
+    readonly useUi: UnwrapRef<typeof import('../../src/composables/index')['useUi']>
     readonly watch: UnwrapRef<typeof import('vue')['watch']>
     readonly watchEffect: UnwrapRef<typeof import('vue')['watchEffect']>
     readonly withCtx: UnwrapRef<typeof import('vue')['withCtx']>

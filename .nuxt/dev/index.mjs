@@ -6,6 +6,7 @@ import { mkdirSync } from 'fs';
 import { parentPort, threadId } from 'worker_threads';
 import { provider, isWindows } from 'file://C:/Users/JUMIA-4408/Documents/1-3243/2-Me/LANRE/2-WEBSITES/NUXTJS/tools-n-tuts/node_modules/std-env/dist/index.mjs';
 import { eventHandler, setHeaders, sendRedirect, defineEventHandler, handleCacheHeaders, createEvent, getRequestHeader, getRequestHeaders, setResponseHeader, assertMethod, readBody, setCookie, createApp, createRouter as createRouter$1, lazyEventHandler, toNodeListener, getQuery, createError } from 'file://C:/Users/JUMIA-4408/Documents/1-3243/2-Me/LANRE/2-WEBSITES/NUXTJS/tools-n-tuts/node_modules/h3/dist/index.mjs';
+import got from 'file://C:/Users/JUMIA-4408/Documents/1-3243/2-Me/LANRE/2-WEBSITES/NUXTJS/tools-n-tuts/node_modules/got/dist/source/index.js';
 import { createRenderer } from 'file://C:/Users/JUMIA-4408/Documents/1-3243/2-Me/LANRE/2-WEBSITES/NUXTJS/tools-n-tuts/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import devalue from 'file://C:/Users/JUMIA-4408/Documents/1-3243/2-Me/LANRE/2-WEBSITES/NUXTJS/tools-n-tuts/node_modules/@nuxt/devalue/dist/devalue.mjs';
 import { renderToString } from 'file://C:/Users/JUMIA-4408/Documents/1-3243/2-Me/LANRE/2-WEBSITES/NUXTJS/tools-n-tuts/node_modules/vue/server-renderer/index.mjs';
@@ -500,10 +501,12 @@ const _7Tjr1G = defineEventHandler(async (event) => {
   return "auth cookie set";
 });
 
+const _lazy_mYX8hw = () => Promise.resolve().then(function () { return pPayment_post$1; });
 const _lazy_HNjv2Z = () => Promise.resolve().then(function () { return gData_get$1; });
 const _lazy_JF4fht = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
+  { route: '/api/p-payment', handler: _lazy_mYX8hw, lazy: true, middleware: false, method: "post" },
   { route: '/api/g-data', handler: _lazy_HNjv2Z, lazy: true, middleware: false, method: "get" },
   { route: '/__nuxt_error', handler: _lazy_JF4fht, lazy: true, middleware: false, method: undefined },
   { route: '/manifest.json', handler: _QGXjtG, lazy: false, middleware: false, method: undefined },
@@ -583,6 +586,47 @@ server.listen(listenAddress, () => {
   process.on("unhandledRejection", (err) => console.error("[nitro] [dev] [unhandledRejection]", err));
   process.on("uncaughtException", (err) => console.error("[nitro] [dev] [uncaughtException]", err));
 }
+
+const pPayment_post = defineEventHandler(async (event) => {
+  const body = readBody(event);
+  console.log("body is", body);
+  try {
+    const response = await got.post("https://api.flutterwave.com/v3/payments", {
+      headers: {
+        Authorization: `Bearer ${process.env.FLW_SECRET_KEY}`
+      },
+      json: {
+        tx_ref: "hooli-tx-1920bbtytty",
+        amount: "100",
+        currency: "NGN",
+        redirect_url: "https://tools-n-tuts.vercel.app/successful",
+        meta: {
+          consumer_id: 23,
+          consumer_mac: "92a3-912ba-1192a"
+        },
+        customer: {
+          email: "user@gmail.com",
+          phonenumber: "080****4528",
+          name: "Yemi Desola"
+        },
+        customizations: {
+          title: "Tools n Tuts",
+          logo: "http://www.piedpiper.com/app/themes/joystick-v27/images/logo.png"
+        }
+      }
+    }).json();
+    return response;
+  } catch (err) {
+    console.log(err.code);
+    console.log(err.response.body);
+    return err.response.body;
+  }
+});
+
+const pPayment_post$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  'default': pPayment_post
+});
 
 const gData_get = defineEventHandler(async (event) => {
   try {

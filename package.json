@@ -1,6 +1,7 @@
 {
   "private": true,
   "name": "ToolsNTuts",
+  "description": "Your open source productivity plus suite",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -27,6 +28,7 @@
     "@heroicons/vue": "^2.0.13",
     "@supabase/supabase-js": "^2.2.0",
     "base64-arraybuffer": "^1.0.2",
+    "got": "^12.5.3",
     "pinia": "^2.0.28",
     "vue-picture-cropper": "^0.6.0"
   }

@@ -2,6 +2,7 @@
 declare module 'nitropack' {
   type Awaited<T> = T extends PromiseLike<infer U> ? Awaited<U> : T
   interface InternalApi {
+    '/api/p-payment': Awaited<ReturnType<typeof import('../../src/server/api/p-payment.post').default>>
     '/api/g-data': Awaited<ReturnType<typeof import('../../src/server/api/g-data.get').default>>
     '/__nuxt_error': Awaited<ReturnType<typeof import('../../node_modules/nuxt/dist/core/runtime/nitro/renderer').default>>
     '/manifest.json': Awaited<ReturnType<typeof import('../../node_modules/@kevinmarrec/nuxt-pwa/dist/runtime/server/manifest').default>>

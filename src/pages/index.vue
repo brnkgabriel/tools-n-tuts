@@ -6,6 +6,10 @@
 <script setup lang="ts">
 
 useHead({
-    title: "TnTs"
+  title: "TnTs"
+})
+
+definePageMeta({
+  layout: "home"
 })
 </script>
