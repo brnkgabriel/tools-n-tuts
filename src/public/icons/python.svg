@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 460 460" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Capa-1" serif:id="Capa 1" transform="matrix(1,0,0,1,-70,-70)">
+        <path id="path101" d="M300,190L120,190C120,190 70,190 70,300C70,410 120,410 120,410L170,410L170,360C170,320 200,290 240,290L359.934,290C390,290 410,270 410.414,239.52C410.828,209.04 410,120 410,120C410,120 410,70 300,70C190,70 190,120 190,120L190,170L300,170L300,190Z" style="fill:rgb(56,126,184);fill-rule:nonzero;"/>
+        <path id="path102" d="M300,410L480,410C480,410 530,410 530,300C530,190 480,190 480,190L430,190L430,240C430,280 400,310 360,310L240,310C210,310 190,330 190,360L190,480C190,480 190,530 300,530C410,530 410,480 410,480L410,430L300,430L300,410Z" style="fill:rgb(255,195,49);fill-rule:nonzero;"/>
+        <circle id="path103" cx="240" cy="120" r="20" style="fill:white;"/>
+        <circle id="path104" cx="360" cy="480" r="20" style="fill:white;"/>
+    </g>
+</svg>

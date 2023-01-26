@@ -6,7 +6,6 @@ declare global {
   const clearError: typeof import('../../node_modules/nuxt/dist/app')['clearError']
   const clearNuxtData: typeof import('../../node_modules/nuxt/dist/app')['clearNuxtData']
   const computed: typeof import('vue')['computed']
-  const constants: typeof import('../../src/composables/index')['constants']
   const createError: typeof import('../../node_modules/nuxt/dist/app')['createError']
   const customRef: typeof import('vue')['customRef']
   const defineAppConfig: typeof import('../../node_modules/nuxt/dist/app')['defineAppConfig']
@@ -22,6 +21,7 @@ declare global {
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
   const h: typeof import('vue')['h']
+  const imgSrc: typeof import('../../src/composables/index')['imgSrc']
   const inject: typeof import('vue')['inject']
   const isNuxtError: typeof import('../../node_modules/nuxt/dist/app')['isNuxtError']
   const isPrerendered: typeof import('../../node_modules/nuxt/dist/app')['isPrerendered']
@@ -121,7 +121,6 @@ declare module 'vue' {
     readonly clearError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['clearError']>
     readonly clearNuxtData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['clearNuxtData']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
-    readonly constants: UnwrapRef<typeof import('../../src/composables/index')['constants']>
     readonly createError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['createError']>
     readonly customRef: UnwrapRef<typeof import('vue')['customRef']>
     readonly defineAppConfig: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['defineAppConfig']>
@@ -137,6 +136,7 @@ declare module 'vue' {
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
+    readonly imgSrc: UnwrapRef<typeof import('../../src/composables/index')['imgSrc']>
     readonly inject: UnwrapRef<typeof import('vue')['inject']>
     readonly isNuxtError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['isNuxtError']>
     readonly isPrerendered: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['isPrerendered']>
