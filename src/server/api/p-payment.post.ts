@@ -14,7 +14,7 @@ export default defineEventHandler(async (event: H3Event) => {
   //   return { error: error.message }
   // }]
 
-  const body = readBody(event)
+  const body = await readBody(event)
 
   console.log("body is", body)
   // code reference: https://developer.flutterwave.com/docs/collecting-payments/standard/
@@ -26,7 +26,7 @@ export default defineEventHandler(async (event: H3Event) => {
       json: {
         tx_ref: "hooli-tx-1920bbtytty",
         amount: "100",
-        currency: "NGN",
+        currency: "USD",
         redirect_url: "https://tools-n-tuts.vercel.app/successful",
         meta: {
           consumer_id: 23,

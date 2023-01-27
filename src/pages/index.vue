@@ -10,6 +10,6 @@ useHead({
 })
 
 definePageMeta({
-  layout: "catalog"
+  layout: "home"
 })
 </script>

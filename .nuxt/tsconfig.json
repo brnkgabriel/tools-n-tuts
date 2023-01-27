@@ -85,9 +85,6 @@
       "#build/*": [
         ".nuxt/*"
       ],
-      "#pwa": [
-        "../.nuxt/types/pwa"
-      ],
       "#components": [
         ".nuxt/components"
       ]

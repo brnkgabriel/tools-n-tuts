@@ -9,7 +9,7 @@ const flexCenterCenter = "flex justify-center items-center"
 const mainline = "text-rcnblue-500 font-semibold text-sm"
 const center = "absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
 const flex_center = "flex flex-col justify-center items-center"
-const btn = "rounded-full bg-white shadow-custom py-3 px-6 w-fit text-center cursor-pointer text-rcnblue-500 border-2 text-xs"
+const btn = "rounded-full bg-white shadow-custom py-2 px-4 text-center cursor-pointer text-rcnblue-500 border-2 text-xs flex justify-center items-center gap-x-2"
 export const useUi = () => {
   return {
     btmnavwrap: "grid gap-x-2 bg-white z-10 w-full max-w-md",
@@ -107,7 +107,7 @@ export const useUi = () => {
     subline,
     grayText,
     breadcrumb: grayText + " uppercase mb-1 " + tiny,
-    logo: flexCenterCenter + " bg-white shadow-custom absolute top-[40%] left-[16px] w-[50px] h-[50px] landscape:top-[50%] landscape:left-[40%] landscape:-translate-x-1/2 rounded-full p-2 z-10 -translate-y-1/2",
+    logo: flexCenterCenter + " bg-white shadow-custom absolute top-[40%] left-[16px] w-[50px] h-[50px] landscape:top-[50%] landscape:left-[40%] landscape:-translate-x-1/2 rounded-full p-3 z-10 -translate-y-1/2",
     bottomNavLink: flexCenterCenter + " flex-col cursor-pointer",
     bottomNavLinkIcon: flexCenterCenter + " w-[32px] h-[32px]",
     btn,
@@ -123,4 +123,11 @@ export const useUi = () => {
     dropdown: "absolute top-full right-[8px] z-[100] w-fit mt-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none capitalize overflow-hidden",
     dropdownLogout: "text-gray-700 block px-4 py-2 text-sm cursor-pointer",
   }
+}
+
+export const obj2Str = (obj: iDynamicObject) => Object.keys(obj)
+  .reduce((acc, cur) => acc + `${cur}:${obj[cur]};`, "")
+
+export const constants = {
+  donateApiUrl: "/api/p-payment"
 }

@@ -2,6 +2,10 @@
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     'BottomNav': typeof import("../src/components/BottomNav.vue")['default']
+    'DonateComponent': typeof import("../src/components/DonateComponent.vue")['default']
+    'DonateIcon': typeof import("../src/components/DonateIcon.vue")['default']
+    'Spinloader': typeof import("../src/components/Spinloader.vue")['default']
+    'SwitchComp': typeof import("../src/components/SwitchComp.vue")['default']
     'TopNav': typeof import("../src/components/TopNav.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
@@ -24,6 +28,10 @@ declare module '@vue/runtime-core' {
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyBottomNav': typeof import("../src/components/BottomNav.vue")['default']
+    'LazyDonateComponent': typeof import("../src/components/DonateComponent.vue")['default']
+    'LazyDonateIcon': typeof import("../src/components/DonateIcon.vue")['default']
+    'LazySpinloader': typeof import("../src/components/Spinloader.vue")['default']
+    'LazySwitchComp': typeof import("../src/components/SwitchComp.vue")['default']
     'LazyTopNav': typeof import("../src/components/TopNav.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
     'LazyNuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
@@ -49,6 +57,10 @@ declare module '@vue/runtime-core' {
 }
 
 export const BottomNav: typeof import("../src/components/BottomNav.vue")['default']
+export const DonateComponent: typeof import("../src/components/DonateComponent.vue")['default']
+export const DonateIcon: typeof import("../src/components/DonateIcon.vue")['default']
+export const Spinloader: typeof import("../src/components/Spinloader.vue")['default']
+export const SwitchComp: typeof import("../src/components/SwitchComp.vue")['default']
 export const TopNav: typeof import("../src/components/TopNav.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
@@ -71,6 +83,10 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyBottomNav: typeof import("../src/components/BottomNav.vue")['default']
+export const LazyDonateComponent: typeof import("../src/components/DonateComponent.vue")['default']
+export const LazyDonateIcon: typeof import("../src/components/DonateIcon.vue")['default']
+export const LazySpinloader: typeof import("../src/components/Spinloader.vue")['default']
+export const LazySwitchComp: typeof import("../src/components/SwitchComp.vue")['default']
 export const LazyTopNav: typeof import("../src/components/TopNav.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const LazyNuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/layout")['default']

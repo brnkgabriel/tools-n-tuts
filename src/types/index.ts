@@ -66,3 +66,25 @@ export interface iNoteDetail {
   note_description: string;
   event_string_id: string;
 }
+
+export interface iFWData {
+  link: string;
+}
+
+export interface iFWResponse {
+  data: iFWData
+  message: string;
+  status: string;
+}
+
+export interface iCustomer {
+  email: string;
+  phonenumber: string;
+  name: string;
+}
+
+export interface iDonate {
+  amount: string;
+  currency: string;
+  customer: iCustomer;
+}
