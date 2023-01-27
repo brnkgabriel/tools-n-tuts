@@ -611,7 +611,7 @@ const pPayment_post = defineEventHandler(async (event) => {
         },
         customizations: {
           title: "Tools n Tuts",
-          logo: "https://checkout-v3-ui-prod.tls-flutterwave.com/img/card-number-input.19f2b12d.svg"
+          logo: "https://tools-n-tuts.vercel.app/icons/logo.svg"
         }
       }
     }).json();
