@@ -589,29 +589,29 @@ server.listen(listenAddress, () => {
 
 const pPayment_post = defineEventHandler(async (event) => {
   const body = await readBody(event);
-  console.log("body is", body);
+  const donateRef = body;
   try {
     const response = await got.post("https://api.flutterwave.com/v3/payments", {
       headers: {
         Authorization: `Bearer ${process.env.FLW_SECRET_KEY}`
       },
       json: {
-        tx_ref: "hooli-tx-1920bbtytty",
-        amount: "100",
-        currency: "USD",
+        tx_ref: donateRef.txReference,
+        amount: donateRef.amount,
+        currency: donateRef.currency,
         redirect_url: "https://tools-n-tuts.vercel.app/successful",
         meta: {
           consumer_id: 23,
           consumer_mac: "92a3-912ba-1192a"
         },
         customer: {
-          email: "user@gmail.com",
-          phonenumber: "080****4528",
-          name: "Yemi Desola"
+          email: donateRef.customer.email,
+          phonenumber: donateRef.customer.phonenumber,
+          name: donateRef.customer.name
         },
         customizations: {
           title: "Tools n Tuts",
-          logo: "https://tools-n-tuts.vercel.app/icons/logo.svg"
+          logo: "https://tools-n-tuts.vercel.app/images/logo.png"
         }
       }
     }).json();

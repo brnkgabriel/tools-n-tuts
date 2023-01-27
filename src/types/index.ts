@@ -87,4 +87,11 @@ export interface iDonate {
   amount: string;
   currency: string;
   customer: iCustomer;
+  txReference: string;
+  meta: iMeta;
+}
+
+export interface iMeta {
+  consumer_id: number;
+  consumer_mac: string;
 }

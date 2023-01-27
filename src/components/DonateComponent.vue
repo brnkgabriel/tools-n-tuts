@@ -14,12 +14,17 @@
 import { iDonate, iFWResponse } from '../types';
 
 const donateRef = ref<iDonate>({
-  amount: "100",
+  txReference: `john-doe${Date.now()}`,
+  amount: "500",
   currency: "NGN",
   customer: {
-    email: "john.doe@gmail.com",
-    name: "John Doe",
-    phonenumber: "+234 815 310 8276"
+    email: "",
+    name: "",
+    phonenumber: ""
+  },
+  meta: {
+    consumer_id: Date.now(),
+    consumer_mac: `john-doe${Date.now()}`
   }
 })
 
@@ -31,7 +36,7 @@ const handleDonate = async () => {
   const options = {
     headers: { "Content-type": "multipart/form-data" },
     method: 'POST',
-    body: { currency: "NGN" }
+    body: donateRef.value
   }
 
   const { data } = await useFetch(constants.donateApiUrl, options)
