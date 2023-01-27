@@ -1,19 +1,8 @@
-import { H3Event, getQuery, readBody } from "h3"
+import { H3Event, readBody } from "h3"
 import got from "got"
 import { iDonate } from "~~/src/types"
 
-export default defineEventHandler(async (event: H3Event) => {
-  // try {
-  //   const query = getQuery(event) as any
-  //   console.log(query)
-  //   const path = query.path
-  //   const url = `https://script.google.com/macros/s/AKfycbyzfNWhPnxgEcbt4tSiCMKsoSurroruxBs2w2DpnXIMlRI-unma1s4bPBK8BnvA4Xbi/exec?path=${path}`
-  //   const response = await fetch(url)
-  //   const data = response.json()
-  //   return data
-  // } catch (error: any) {
-  //   return { error: error.message }
-  // }]
+export default defineEventHandler(async (event: H3Event) => { 
 
   const body = await readBody(event)
   const donateRef = body as iDonate
