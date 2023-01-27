@@ -32,7 +32,7 @@ export default defineEventHandler(async (event: H3Event) => {
           logo: "https://tools-n-tuts.vercel.app/images/logo.png"
         }
       }
-    }).json();
+    }).json(); 
     return response
   } catch (err: any) {
     console.log(err.code);
