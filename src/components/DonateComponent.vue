@@ -40,9 +40,10 @@ const handleDonate = async () => {
   }
 
   const { data } = await useFetch(constants.donateApiUrl, options)
-  const fwResponse = data.value as iFWResponse
+  console.log("data is", data)
+  // const fwResponse = data.value as iFWResponse
   
-  navigateTo(fwResponse.data.link, { external: true })
+  // navigateTo(fwResponse.data.link, { external: true })
 }
 </script>
 <style lang="">
