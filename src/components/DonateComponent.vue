@@ -18,9 +18,9 @@ const donateRef = ref<iDonate>({
   amount: "500",
   currency: "NGN",
   customer: {
-    email: "",
-    name: "",
-    phonenumber: ""
+    email: "john.doe@gmail.com",
+    name: "John Doe",
+    phonenumber: "+234 815 310 8276"
   },
   meta: {
     consumer_id: Date.now(),
@@ -40,10 +40,9 @@ const handleDonate = async () => {
   }
 
   const { data } = await useFetch(constants.donateApiUrl, options)
-  console.log("data is", data)
-  // const fwResponse = data.value as iFWResponse
+  const fwResponse = data.value as iFWResponse
   
-  // navigateTo(fwResponse.data.link, { external: true })
+  navigateTo(fwResponse.data.link, { external: true })
 }
 </script>
 <style lang="">

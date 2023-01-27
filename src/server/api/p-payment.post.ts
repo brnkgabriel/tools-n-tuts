@@ -33,7 +33,7 @@ export default defineEventHandler(async (event: H3Event) => {
         }
       }
     }).json();
-    return got
+    return response
   } catch (err: any) {
     console.log(err.code);
     console.log(err.response.body);
