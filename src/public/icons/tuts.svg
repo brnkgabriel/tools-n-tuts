@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g transform="matrix(14.2857,0,0,14.2857,-21.4286,-21.4286)">
-        <path d="M4.5,4.5C2.854,4.5 1.5,5.854 1.5,7.5L1.5,16.5C1.5,18.146 2.854,19.5 4.5,19.5L12.75,19.5C14.396,19.5 15.75,18.146 15.75,16.5L15.75,7.5C15.75,5.854 14.396,4.5 12.75,4.5L4.5,4.5ZM19.94,18.75L17.25,16.06L17.25,7.94L19.94,5.25C20.884,4.305 22.5,4.974 22.5,6.31L22.5,17.69C22.5,19.026 20.884,19.695 19.94,18.75Z" style="fill-rule:nonzero;"/>
+<svg
+   width="100%"
+   height="100%"
+   viewBox="0 0 300 300"
+   version="1.1"
+   xml:space="preserve"
+   style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+   id="svg314"
+   sodipodi:docname="tuts.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs318" /><sodipodi:namedview
+   id="namedview316"
+   pagecolor="#ffffff"
+   bordercolor="#cccccc"
+   borderopacity="1"
+   inkscape:showpageshadow="0"
+   inkscape:pageopacity="1"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   showgrid="false"
+   inkscape:zoom="2.68"
+   inkscape:cx="150.18657"
+   inkscape:cy="150.18657"
+   inkscape:window-width="1920"
+   inkscape:window-height="991"
+   inkscape:window-x="-9"
+   inkscape:window-y="-9"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg314" />
+    <g
+   transform="matrix(14.2857,0,0,14.2857,-21.4286,-21.4286)"
+   id="g312"
+   style="fill:#0b5cff;fill-opacity:1">
+        <path
+   d="M4.5,4.5C2.854,4.5 1.5,5.854 1.5,7.5L1.5,16.5C1.5,18.146 2.854,19.5 4.5,19.5L12.75,19.5C14.396,19.5 15.75,18.146 15.75,16.5L15.75,7.5C15.75,5.854 14.396,4.5 12.75,4.5L4.5,4.5ZM19.94,18.75L17.25,16.06L17.25,7.94L19.94,5.25C20.884,4.305 22.5,4.974 22.5,6.31L22.5,17.69C22.5,19.026 20.884,19.695 19.94,18.75Z"
+   style="fill-rule:nonzero;fill:#0b5cff;fill-opacity:1"
+   id="path310" />
     </g>
 </svg>

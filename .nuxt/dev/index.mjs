@@ -611,7 +611,7 @@ const pPayment_post = defineEventHandler(async (event) => {
         },
         customizations: {
           title: "Tools n Tuts",
-          logo: "http://www.piedpiper.com/app/themes/joystick-v27/images/logo.png"
+          logo: "https://checkout-v3-ui-prod.tls-flutterwave.com/img/card-number-input.19f2b12d.svg"
         }
       }
     }).json();

@@ -1,8 +1,8 @@
 <template>
   <div :class="topnavwrap">
-    <NuxtLink href="/" class="flex justify-center items-center gap-x-2">
+    <NuxtLink href="/" class="flex justify-center items-center gap-x-1">
       <img :class="topnavlogo" src="/icons/logo.svg" alt="logo" />
-      <div class="capitalize font-bold">tools n tuts</div>
+      <div class="font-medium text-sm">Tools n Tuts</div>
     </NuxtLink>
 
     <NuxtLink href="/donate" :class="btn">
