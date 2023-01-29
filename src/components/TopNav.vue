@@ -5,7 +5,7 @@
       <div class="font-medium text-sm">Tools n Tuts</div>
     </NuxtLink>
 
-    <NuxtLink href="https://www.paypal.com/donate/?hosted_button_id=5974UT4X3NAJJ" target="_blank" :class="btn">
+    <NuxtLink href="/donate" :class="btn">
       Donate
     </NuxtLink>
   </div>

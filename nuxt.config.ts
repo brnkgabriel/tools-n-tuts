@@ -17,11 +17,6 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
-    script: [
-      {
-        src: 'https://checkout.flutterwave.com/v3.js'
-      }
-    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

@@ -129,5 +129,6 @@ export const obj2Str = (obj: iDynamicObject) => Object.keys(obj)
   .reduce((acc, cur) => acc + `${cur}:${obj[cur]};`, "")
 
 export const constants = {
-  donateApiUrl: "/api/p-payment"
+  donateApiUrl: "/api/p-payment",
+  PayPalUrl: "https://www.paypal.com/donate/?hosted_button_id=5974UT4X3NAJJ"
 }
