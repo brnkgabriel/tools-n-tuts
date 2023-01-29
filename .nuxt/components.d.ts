@@ -2,6 +2,7 @@
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     'BottomNav': typeof import("../src/components/BottomNav.vue")['default']
+    'ComboBox': typeof import("../src/components/ComboBox.vue")['default']
     'DonateComponent': typeof import("../src/components/DonateComponent.vue")['default']
     'DonateIcon': typeof import("../src/components/DonateIcon.vue")['default']
     'Spinloader': typeof import("../src/components/Spinloader.vue")['default']
@@ -28,6 +29,7 @@ declare module '@vue/runtime-core' {
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyBottomNav': typeof import("../src/components/BottomNav.vue")['default']
+    'LazyComboBox': typeof import("../src/components/ComboBox.vue")['default']
     'LazyDonateComponent': typeof import("../src/components/DonateComponent.vue")['default']
     'LazyDonateIcon': typeof import("../src/components/DonateIcon.vue")['default']
     'LazySpinloader': typeof import("../src/components/Spinloader.vue")['default']
@@ -57,6 +59,7 @@ declare module '@vue/runtime-core' {
 }
 
 export const BottomNav: typeof import("../src/components/BottomNav.vue")['default']
+export const ComboBox: typeof import("../src/components/ComboBox.vue")['default']
 export const DonateComponent: typeof import("../src/components/DonateComponent.vue")['default']
 export const DonateIcon: typeof import("../src/components/DonateIcon.vue")['default']
 export const Spinloader: typeof import("../src/components/Spinloader.vue")['default']
@@ -83,6 +86,7 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyBottomNav: typeof import("../src/components/BottomNav.vue")['default']
+export const LazyComboBox: typeof import("../src/components/ComboBox.vue")['default']
 export const LazyDonateComponent: typeof import("../src/components/DonateComponent.vue")['default']
 export const LazyDonateIcon: typeof import("../src/components/DonateIcon.vue")['default']
 export const LazySpinloader: typeof import("../src/components/Spinloader.vue")['default']

@@ -631,9 +631,8 @@ const pPayment_post$1 = /*#__PURE__*/Object.freeze({
 const gData_get = defineEventHandler(async (event) => {
   try {
     const query = getQuery(event);
-    console.log(query);
     const path = query.path;
-    const url = `https://script.google.com/macros/s/AKfycbyzfNWhPnxgEcbt4tSiCMKsoSurroruxBs2w2DpnXIMlRI-unma1s4bPBK8BnvA4Xbi/exec?path=${path}`;
+    const url = `https://script.google.com/macros/s/AKfycbxNoAhs9_5v4dBxC7ybXYIK8-_3ulEF2TFxQk47YIw9cb5yKC6byzpG9vHHyoIgSMqW/exec?path=${path}`;
     const response = await fetch(url);
     const data = response.json();
     return data;

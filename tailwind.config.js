@@ -18,14 +18,14 @@ module.exports = {
         xxs: ['0.25rem', { lineHeight: '1rem' }],
       },
       colors: {
-        rcnblue: {
-          500: "#17143D"
+        mainblue: {
+          500: "#0B5CFF"
         },
-        rcnorange: {
-          500: "#FD6C03"
+        mainorange: {
+          500: "#EC6600"
         },
-        rcnred: {
-          500: "#F71103"
+        maindark: {
+          500: "#333333"
         },
         rcngray: {
           500: "#f5f5f5",

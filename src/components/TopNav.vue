@@ -8,7 +8,7 @@
       </div>
     </NuxtLink>
 
-    <NuxtLink :href="constants.PayPalUrl" target="_blank" :class="btn">
+    <NuxtLink :href="constants.PayPalUrl" target="_blank" :class="btn" class="bg-mainblue-500 text-white">
       Donate
     </NuxtLink>
   </div>

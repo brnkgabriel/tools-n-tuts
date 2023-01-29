@@ -130,5 +130,31 @@ export const obj2Str = (obj: iDynamicObject) => Object.keys(obj)
 
 export const constants = {
   donateApiUrl: "/api/p-payment",
-  PayPalUrl: "https://www.paypal.com/donate/?hosted_button_id=5974UT4X3NAJJ"
+  PayPalUrl: "https://www.paypal.com/donate/?hosted_button_id=5974UT4X3NAJJ",
+  toolsApiUrl: "/api/g-data/?path=tools",
+  tutsApiUrl: "/api/g-data/?path=tuts"
 }
+
+export const operatingSystem = () => {
+  // @ts-ignore
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  // Windows Phone must come first because its UA also contains "Android"
+  if (/windows phone/i.test(userAgent)) {
+    return "Windows Phone";
+  }
+
+  if (/android/i.test(userAgent)) {
+    return "Android";
+  }
+
+  // iOS detection from: http://stackoverflow.com/a/9039885/177710
+  // @ts-ignore
+  if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    return "iOS";
+  }
+
+  return "unknown";
+}
+
+export const comboInput = () => operatingSystem() === "iOS" ? "w-full border-none py-2 pl-3 pr-10 text-[16px] leading-5 text-gray-900 focus-visible:outline-none" : "w-full border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus-visible:outline-none"

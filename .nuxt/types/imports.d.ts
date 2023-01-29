@@ -5,6 +5,7 @@ declare global {
   const addRouteMiddleware: typeof import('../../node_modules/nuxt/dist/app')['addRouteMiddleware']
   const clearError: typeof import('../../node_modules/nuxt/dist/app')['clearError']
   const clearNuxtData: typeof import('../../node_modules/nuxt/dist/app')['clearNuxtData']
+  const comboInput: typeof import('../../src/composables/index')['comboInput']
   const computed: typeof import('vue')['computed']
   const constants: typeof import('../../src/composables/index')['constants']
   const createError: typeof import('../../node_modules/nuxt/dist/app')['createError']
@@ -53,6 +54,7 @@ declare global {
   const onServerPrefetch: typeof import('vue')['onServerPrefetch']
   const onUnmounted: typeof import('vue')['onUnmounted']
   const onUpdated: typeof import('vue')['onUpdated']
+  const operatingSystem: typeof import('../../src/composables/index')['operatingSystem']
   const prefetchComponents: typeof import('../../node_modules/nuxt/dist/app')['prefetchComponents']
   const preloadComponents: typeof import('../../node_modules/nuxt/dist/app')['preloadComponents']
   const preloadPayload: typeof import('../../node_modules/nuxt/dist/app')['preloadPayload']
@@ -122,6 +124,7 @@ declare module 'vue' {
     readonly addRouteMiddleware: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['addRouteMiddleware']>
     readonly clearError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['clearError']>
     readonly clearNuxtData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['clearNuxtData']>
+    readonly comboInput: UnwrapRef<typeof import('../../src/composables/index')['comboInput']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
     readonly constants: UnwrapRef<typeof import('../../src/composables/index')['constants']>
     readonly createError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['createError']>
@@ -170,6 +173,7 @@ declare module 'vue' {
     readonly onServerPrefetch: UnwrapRef<typeof import('vue')['onServerPrefetch']>
     readonly onUnmounted: UnwrapRef<typeof import('vue')['onUnmounted']>
     readonly onUpdated: UnwrapRef<typeof import('vue')['onUpdated']>
+    readonly operatingSystem: UnwrapRef<typeof import('../../src/composables/index')['operatingSystem']>
     readonly prefetchComponents: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['prefetchComponents']>
     readonly preloadComponents: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['preloadComponents']>
     readonly preloadPayload: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['preloadPayload']>
