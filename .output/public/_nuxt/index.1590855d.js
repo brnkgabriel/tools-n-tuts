@@ -1,0 +1,1 @@
+import{u as e}from"./composables.4409316d.js";import{q as o,v as t,o as s}from"./entry.74a160eb.js";const n={class:"font-body"},i=o({__name:"index",setup(a){return e({title:"TnTs"}),(r,c)=>(s(),t("div",n," home "))}});export{i as default};

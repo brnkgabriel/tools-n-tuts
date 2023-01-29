@@ -1,7 +1,7 @@
 <template>
   <div class="h-full w-screen font-body overflow-x-hidden">
     <TopNav class="h-[56px] px-2" />
-    <div class="grid grid-cols-2 relative content">
+    <div class="grid grid-cols-1 sm:grid-cols-2 relative content">
       <NuxtLink href="/" :class="logo">
         <img src="/icons/logo.svg" alt="logo" />
       </NuxtLink>

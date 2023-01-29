@@ -1,4 +1,4 @@
-import { getCurrentInstance, version as version$7, defineComponent, h, inject, computed, unref, Suspense, nextTick, Transition, provide, reactive, useSSRContext, ref, resolveComponent, shallowRef, withCtx, createVNode, createApp, toRef, isRef, effectScope, markRaw, defineAsyncComponent, onErrorCaptured } from 'vue';
+import { getCurrentInstance, version as version$7, defineComponent, h, inject, computed, unref, Suspense, nextTick, Transition, provide, reactive, ref, resolveComponent, shallowRef, useSSRContext, createApp, toRef, isRef, effectScope, markRaw, defineAsyncComponent, onErrorCaptured, withCtx, createVNode } from 'vue';
 import { $fetch } from 'ofetch';
 import { createHooks } from 'hookable';
 import { getContext, executeAsync } from 'unctx';
@@ -24,7 +24,7 @@ import require$$4 from 'https';
 import require$$1$2 from 'typedarray-to-buffer';
 import require$$2$2 from 'yaeti';
 import { defu } from 'defu';
-import { ssrRenderComponent, ssrRenderSuspense } from 'vue/server-renderer';
+import { ssrRenderSuspense, ssrRenderComponent } from 'vue/server-renderer';
 import { a as useRuntimeConfig$1 } from './node-server.mjs';
 import 'node-fetch-native/polyfill';
 import 'unenv/runtime/fetch/index';
@@ -36,7 +36,7 @@ import 'node:url';
 import 'pathe';
 import 'ipx';
 
-var _a, _b;
+var _a, _b, _c, _d, _e, _f;
 const appConfig = useRuntimeConfig$1().app;
 const baseURL = () => appConfig.baseURL;
 const nuxtAppCtx = getContext("nuxt-app");
@@ -412,7 +412,7 @@ function defineNuxtLink(options) {
       const prefetched = ref(false);
       const el = void 0;
       return () => {
-        var _a2, _b2, _c;
+        var _a2, _b2, _c2;
         if (!isExternal.value) {
           return h(
             resolveComponent("RouterLink"),
@@ -448,7 +448,7 @@ function defineNuxtLink(options) {
             isExactActive: false
           });
         }
-        return h("a", { ref: el, href, rel, target }, (_c = slots.default) == null ? void 0 : _c.call(slots));
+        return h("a", { ref: el, href, rel, target }, (_c2 = slots.default) == null ? void 0 : _c2.call(slots));
       };
     }
   });
@@ -623,7 +623,7 @@ function createHead(initHeadObject) {
   return legacyHead;
 }
 version$7.startsWith("2.");
-const appHead = { "meta": [{ "name": "viewport", "content": "width=device-width, initial-scale=1" }, { "charset": "utf-8" }, { "hid": "mobile-web-app-capable", "name": "mobile-web-app-capable", "content": "yes" }, { "hid": "apple-mobile-web-app-title", "name": "apple-mobile-web-app-title", "content": "Nuxt PWA" }, { "hid": "description", "name": "description", "content": "Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more." }, { "hid": "theme-color", "name": "theme-color", "content": "#fff" }, { "hid": "og:type", "property": "og:type", "content": "website" }, { "hid": "og:title", "property": "og:title", "content": "Nuxt PWA" }, { "hid": "og:site_name", "property": "og:site_name", "content": "Nuxt PWA" }, { "hid": "og:description", "property": "og:description", "content": "Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more." }, { "hid": "twitter:card", "name": "twitter:card", "content": "summary" }], "link": [{ "rel": "icon", "href": "/icon-192x192.png", "key": "favicon" }, { "rel": "apple-touch-icon", "href": "/_nuxt/icons/512x512.maskable.83c3b610.png", "sizes": "512x512", "key": "favicon-apple" }, { "rel": "manifest", "href": "/manifest.json" }], "style": [], "script": [], "noscript": [], "title": "Nuxt PWA", "htmlAttrs": { "lang": "en" } };
+const appHead = { "meta": [{ "name": "viewport", "content": "width=device-width, initial-scale=1" }, { "charset": "utf-8" }, { "hid": "mobile-web-app-capable", "name": "mobile-web-app-capable", "content": "yes" }, { "hid": "apple-mobile-web-app-title", "name": "apple-mobile-web-app-title", "content": "ToolsNTuts" }, { "hid": "description", "name": "description", "content": "Your open source productivity plus suite" }, { "hid": "theme-color", "name": "theme-color", "content": "#fff" }, { "hid": "og:type", "property": "og:type", "content": "website" }, { "hid": "og:title", "property": "og:title", "content": "ToolsNTuts" }, { "hid": "og:site_name", "property": "og:site_name", "content": "ToolsNTuts" }, { "hid": "og:description", "property": "og:description", "content": "Your open source productivity plus suite" }, { "hid": "twitter:card", "name": "twitter:card", "content": "summary" }], "link": [{ "rel": "icon", "href": "/icon-192x192.png", "key": "favicon" }, { "rel": "apple-touch-icon", "href": "/icon-512x512.png", "sizes": "512x512", "key": "favicon-apple" }, { "rel": "manifest", "href": "/manifest.json" }], "style": [], "script": [], "noscript": [], "title": "ToolsNTuts", "htmlAttrs": { "lang": "en" } };
 const appLayoutTransition = false;
 const appPageTransition = false;
 const appKeepalive = false;
@@ -644,17 +644,43 @@ const node_modules_nuxt_dist_head_runtime_lib_vueuse_head_plugin_mjs_D7WGfuP1A0 
     };
   }
 });
+const __nuxt_page_meta$2 = {
+  layout: "home"
+};
+const __nuxt_page_meta$1 = {
+  layout: "home"
+};
 const __nuxt_page_meta = {};
 const _routes = [
   {
-    name: (_a = __nuxt_page_meta == null ? void 0 : __nuxt_page_meta.name) != null ? _a : "index",
-    path: (_b = __nuxt_page_meta == null ? void 0 : __nuxt_page_meta.path) != null ? _b : "/",
-    file: "C:/Users/JUMIA-4408/Documents/1-3243/2-Me/LANRE/2-WEBSITES/NUXTJS/tools-n-tuts/pages/index.vue",
+    name: (_a = __nuxt_page_meta$2 == null ? void 0 : __nuxt_page_meta$2.name) != null ? _a : "donate",
+    path: (_b = __nuxt_page_meta$2 == null ? void 0 : __nuxt_page_meta$2.path) != null ? _b : "/donate",
+    file: "C:/Users/JUMIA-4408/Documents/1-3243/2-Me/LANRE/2-WEBSITES/NUXTJS/tools-n-tuts/src/pages/donate.vue",
+    children: [],
+    meta: __nuxt_page_meta$2,
+    alias: (__nuxt_page_meta$2 == null ? void 0 : __nuxt_page_meta$2.alias) || [],
+    redirect: (__nuxt_page_meta$2 == null ? void 0 : __nuxt_page_meta$2.redirect) || void 0,
+    component: () => import('./donate.f76dea1e.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (_c = __nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.name) != null ? _c : "index",
+    path: (_d = __nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.path) != null ? _d : "/",
+    file: "C:/Users/JUMIA-4408/Documents/1-3243/2-Me/LANRE/2-WEBSITES/NUXTJS/tools-n-tuts/src/pages/index.vue",
+    children: [],
+    meta: __nuxt_page_meta$1,
+    alias: (__nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.alias) || [],
+    redirect: (__nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.redirect) || void 0,
+    component: () => import('./index.98bbda54.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (_e = __nuxt_page_meta == null ? void 0 : __nuxt_page_meta.name) != null ? _e : "successful",
+    path: (_f = __nuxt_page_meta == null ? void 0 : __nuxt_page_meta.path) != null ? _f : "/successful",
+    file: "C:/Users/JUMIA-4408/Documents/1-3243/2-Me/LANRE/2-WEBSITES/NUXTJS/tools-n-tuts/src/pages/successful.vue",
     children: [],
     meta: __nuxt_page_meta,
     alias: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.alias) || [],
     redirect: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.redirect) || void 0,
-    component: () => import('./index.f90688e1.mjs').then((m) => m.default || m)
+    component: () => import('./successful.b44bb295.mjs').then((m) => m.default || m)
   }
 ];
 const routerOptions0 = {
@@ -730,14 +756,14 @@ const globalMiddleware = [
 ];
 const namedMiddleware = {};
 const node_modules_nuxt_dist_pages_runtime_router_mjs_qNv5Ky2ZmB = defineNuxtPlugin(async (nuxtApp) => {
-  var _a2, _b2, _c, _d;
+  var _a2, _b2, _c2, _d2;
   let __temp, __restore;
   let routerBase = useRuntimeConfig().app.baseURL;
   if (routerOptions.hashMode && !routerBase.includes("#")) {
     routerBase += "#";
   }
   const history = (_b2 = (_a2 = routerOptions.history) == null ? void 0 : _a2.call(routerOptions, routerBase)) != null ? _b2 : createMemoryHistory(routerBase);
-  const routes = (_d = (_c = routerOptions.routes) == null ? void 0 : _c.call(routerOptions, _routes)) != null ? _d : _routes;
+  const routes = (_d2 = (_c2 = routerOptions.routes) == null ? void 0 : _c2.call(routerOptions, _routes)) != null ? _d2 : _routes;
   const initialURL = nuxtApp.ssrContext.url;
   const router = createRouter({
     ...routerOptions,
@@ -758,8 +784,8 @@ const node_modules_nuxt_dist_pages_runtime_router_mjs_qNv5Ky2ZmB = defineNuxtPlu
   };
   nuxtApp.hook("page:finish", syncCurrentRoute);
   router.afterEach((to, from) => {
-    var _a3, _b3, _c2, _d2;
-    if (((_b3 = (_a3 = to.matched[0]) == null ? void 0 : _a3.components) == null ? void 0 : _b3.default) === ((_d2 = (_c2 = from.matched[0]) == null ? void 0 : _c2.components) == null ? void 0 : _d2.default)) {
+    var _a3, _b3, _c3, _d3;
+    if (((_b3 = (_a3 = to.matched[0]) == null ? void 0 : _a3.components) == null ? void 0 : _b3.default) === ((_d3 = (_c3 = from.matched[0]) == null ? void 0 : _c3.components) == null ? void 0 : _d3.default)) {
       syncCurrentRoute();
     }
   });
@@ -1109,7 +1135,7 @@ class PostgrestBuilder {
       body: JSON.stringify(this.body),
       signal: this.signal
     }).then((res2) => __awaiter$c(this, void 0, void 0, function* () {
-      var _a2, _b2, _c;
+      var _a2, _b2, _c2;
       let error = null;
       let data = null;
       let count = null;
@@ -1137,12 +1163,12 @@ class PostgrestBuilder {
         const body = yield res2.text();
         try {
           error = JSON.parse(body);
-        } catch (_d) {
+        } catch (_d2) {
           error = {
             message: body
           };
         }
-        if (error && this.allowEmpty && ((_c = error === null || error === void 0 ? void 0 : error.details) === null || _c === void 0 ? void 0 : _c.includes("Results contain 0 rows"))) {
+        if (error && this.allowEmpty && ((_c2 = error === null || error === void 0 ? void 0 : error.details) === null || _c2 === void 0 ? void 0 : _c2.includes("Results contain 0 rows"))) {
           error = null;
           status = 200;
           statusText = "OK";
@@ -4577,12 +4603,12 @@ class RealtimeChannel {
   }
   send(payload, opts = {}) {
     return new Promise((resolve) => {
-      var _a2, _b2, _c;
+      var _a2, _b2, _c2;
       const push = this._push(payload.type, payload, opts.timeout || this.timeout);
       if (push.rateLimited) {
         resolve("rate limited");
       }
-      if (payload.type === "broadcast" && !((_c = (_b2 = (_a2 = this.params) === null || _a2 === void 0 ? void 0 : _a2.config) === null || _b2 === void 0 ? void 0 : _b2.broadcast) === null || _c === void 0 ? void 0 : _c.ack)) {
+      if (payload.type === "broadcast" && !((_c2 = (_b2 = (_a2 = this.params) === null || _a2 === void 0 ? void 0 : _a2.config) === null || _b2 === void 0 ? void 0 : _b2.broadcast) === null || _c2 === void 0 ? void 0 : _c2.ack)) {
         resolve("ok");
       }
       push.receive("ok", () => resolve("ok"));
@@ -4653,20 +4679,20 @@ class RealtimeChannel {
     }
     if (["insert", "update", "delete"].includes(typeLower)) {
       (_a2 = this.bindings.postgres_changes) === null || _a2 === void 0 ? void 0 : _a2.filter((bind) => {
-        var _a3, _b3, _c;
-        return ((_a3 = bind.filter) === null || _a3 === void 0 ? void 0 : _a3.event) === "*" || ((_c = (_b3 = bind.filter) === null || _b3 === void 0 ? void 0 : _b3.event) === null || _c === void 0 ? void 0 : _c.toLocaleLowerCase()) === typeLower;
+        var _a3, _b3, _c2;
+        return ((_a3 = bind.filter) === null || _a3 === void 0 ? void 0 : _a3.event) === "*" || ((_c2 = (_b3 = bind.filter) === null || _b3 === void 0 ? void 0 : _b3.event) === null || _c2 === void 0 ? void 0 : _c2.toLocaleLowerCase()) === typeLower;
       }).map((bind) => bind.callback(handledPayload, ref2));
     } else {
       (_b2 = this.bindings[typeLower]) === null || _b2 === void 0 ? void 0 : _b2.filter((bind) => {
-        var _a3, _b3, _c, _d, _e, _f;
+        var _a3, _b3, _c2, _d2, _e2, _f2;
         if (["broadcast", "presence", "postgres_changes"].includes(typeLower)) {
           if ("id" in bind) {
             const bindId = bind.id;
             const bindEvent = (_a3 = bind.filter) === null || _a3 === void 0 ? void 0 : _a3.event;
-            return bindId && ((_b3 = payload.ids) === null || _b3 === void 0 ? void 0 : _b3.includes(bindId)) && (bindEvent === "*" || (bindEvent === null || bindEvent === void 0 ? void 0 : bindEvent.toLocaleLowerCase()) === ((_c = payload.data) === null || _c === void 0 ? void 0 : _c.type.toLocaleLowerCase()));
+            return bindId && ((_b3 = payload.ids) === null || _b3 === void 0 ? void 0 : _b3.includes(bindId)) && (bindEvent === "*" || (bindEvent === null || bindEvent === void 0 ? void 0 : bindEvent.toLocaleLowerCase()) === ((_c2 = payload.data) === null || _c2 === void 0 ? void 0 : _c2.type.toLocaleLowerCase()));
           } else {
-            const bindEvent = (_e = (_d = bind === null || bind === void 0 ? void 0 : bind.filter) === null || _d === void 0 ? void 0 : _d.event) === null || _e === void 0 ? void 0 : _e.toLocaleLowerCase();
-            return bindEvent === "*" || bindEvent === ((_f = payload === null || payload === void 0 ? void 0 : payload.event) === null || _f === void 0 ? void 0 : _f.toLocaleLowerCase());
+            const bindEvent = (_e2 = (_d2 = bind === null || bind === void 0 ? void 0 : bind.filter) === null || _d2 === void 0 ? void 0 : _d2.event) === null || _e2 === void 0 ? void 0 : _e2.toLocaleLowerCase();
+            return bindEvent === "*" || bindEvent === ((_f2 = payload === null || payload === void 0 ? void 0 : payload.event) === null || _f2 === void 0 ? void 0 : _f2.toLocaleLowerCase());
           }
         } else {
           return bind.type.toLocaleLowerCase() === typeLower;
@@ -6121,7 +6147,7 @@ class GoTrueAdminApi {
     });
   }
   listUsers(params) {
-    var _a2, _b2, _c, _d, _e, _f, _g;
+    var _a2, _b2, _c2, _d2, _e2, _f2, _g;
     return __awaiter$2(this, void 0, void 0, function* () {
       try {
         const pagination = { nextPage: null, lastPage: 0, total: 0 };
@@ -6130,15 +6156,15 @@ class GoTrueAdminApi {
           noResolveJson: true,
           query: {
             page: (_b2 = (_a2 = params === null || params === void 0 ? void 0 : params.page) === null || _a2 === void 0 ? void 0 : _a2.toString()) !== null && _b2 !== void 0 ? _b2 : "",
-            per_page: (_d = (_c = params === null || params === void 0 ? void 0 : params.perPage) === null || _c === void 0 ? void 0 : _c.toString()) !== null && _d !== void 0 ? _d : ""
+            per_page: (_d2 = (_c2 = params === null || params === void 0 ? void 0 : params.perPage) === null || _c2 === void 0 ? void 0 : _c2.toString()) !== null && _d2 !== void 0 ? _d2 : ""
           },
           xform: _noResolveJsonResponse
         });
         if (response.error)
           throw response.error;
         const users = yield response.json();
-        const total = (_e = response.headers.get("x-total-count")) !== null && _e !== void 0 ? _e : 0;
-        const links = (_g = (_f = response.headers.get("link")) === null || _f === void 0 ? void 0 : _f.split(",")) !== null && _g !== void 0 ? _g : [];
+        const total = (_e2 = response.headers.get("x-total-count")) !== null && _e2 !== void 0 ? _e2 : 0;
+        const links = (_g = (_f2 = response.headers.get("link")) === null || _f2 === void 0 ? void 0 : _f2.split(",")) !== null && _g !== void 0 ? _g : [];
         if (links.length > 0) {
           links.forEach((link) => {
             const page = parseInt(link.split(";")[0].split("=")[1].substring(0, 1));
@@ -6492,18 +6518,18 @@ class GoTrueClient {
     });
   }
   signInWithOAuth(credentials) {
-    var _a2, _b2, _c;
+    var _a2, _b2, _c2;
     return __awaiter$1(this, void 0, void 0, function* () {
       yield this._removeSession();
       return this._handleProviderSignIn(credentials.provider, {
         redirectTo: (_a2 = credentials.options) === null || _a2 === void 0 ? void 0 : _a2.redirectTo,
         scopes: (_b2 = credentials.options) === null || _b2 === void 0 ? void 0 : _b2.scopes,
-        queryParams: (_c = credentials.options) === null || _c === void 0 ? void 0 : _c.queryParams
+        queryParams: (_c2 = credentials.options) === null || _c2 === void 0 ? void 0 : _c2.queryParams
       });
     });
   }
   signInWithOtp(credentials) {
-    var _a2, _b2, _c, _d;
+    var _a2, _b2, _c2, _d2;
     return __awaiter$1(this, void 0, void 0, function* () {
       try {
         yield this._removeSession();
@@ -6527,8 +6553,8 @@ class GoTrueClient {
             headers: this.headers,
             body: {
               phone,
-              data: (_c = options === null || options === void 0 ? void 0 : options.data) !== null && _c !== void 0 ? _c : {},
-              create_user: (_d = options === null || options === void 0 ? void 0 : options.shouldCreateUser) !== null && _d !== void 0 ? _d : true,
+              data: (_c2 = options === null || options === void 0 ? void 0 : options.data) !== null && _c2 !== void 0 ? _c2 : {},
+              create_user: (_d2 = options === null || options === void 0 ? void 0 : options.shouldCreateUser) !== null && _d2 !== void 0 ? _d2 : true,
               gotrue_meta_security: { captcha_token: options === null || options === void 0 ? void 0 : options.captchaToken }
             }
           });
@@ -6576,12 +6602,12 @@ class GoTrueClient {
     });
   }
   signInWithSSO(params) {
-    var _a2, _b2, _c;
+    var _a2, _b2, _c2;
     return __awaiter$1(this, void 0, void 0, function* () {
       try {
         yield this._removeSession();
         return yield _request(this.fetch, "POST", `${this.url}/sso`, {
-          body: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, "providerId" in params ? { provider_id: params.providerId } : null), "domain" in params ? { domain: params.domain } : null), { redirect_to: (_b2 = (_a2 = params.options) === null || _a2 === void 0 ? void 0 : _a2.redirectTo) !== null && _b2 !== void 0 ? _b2 : void 0 }), ((_c = params === null || params === void 0 ? void 0 : params.options) === null || _c === void 0 ? void 0 : _c.captchaToken) ? { gotrue_meta_security: { captcha_token: params.options.captchaToken } } : null), { skip_http_redirect: true }),
+          body: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, "providerId" in params ? { provider_id: params.providerId } : null), "domain" in params ? { domain: params.domain } : null), { redirect_to: (_b2 = (_a2 = params.options) === null || _a2 === void 0 ? void 0 : _a2.redirectTo) !== null && _b2 !== void 0 ? _b2 : void 0 }), ((_c2 = params === null || params === void 0 ? void 0 : params.options) === null || _c2 === void 0 ? void 0 : _c2.captchaToken) ? { gotrue_meta_security: { captcha_token: params.options.captchaToken } } : null), { skip_http_redirect: true }),
           headers: this.headers,
           xform: _ssoResponse
         });
@@ -7255,7 +7281,7 @@ const DEFAULT_AUTH_OPTIONS = {
 const DEFAULT_REALTIME_OPTIONS = {};
 class SupabaseClient {
   constructor(supabaseUrl, supabaseKey, options) {
-    var _a2, _b2, _c, _d, _e, _f, _g, _h;
+    var _a2, _b2, _c2, _d2, _e2, _f2, _g, _h;
     this.supabaseUrl = supabaseUrl;
     this.supabaseKey = supabaseKey;
     if (!supabaseUrl)
@@ -7282,8 +7308,8 @@ class SupabaseClient {
     };
     const settings = applySettingDefaults(options !== null && options !== void 0 ? options : {}, DEFAULTS);
     this.storageKey = (_b2 = (_a2 = settings.auth) === null || _a2 === void 0 ? void 0 : _a2.storageKey) !== null && _b2 !== void 0 ? _b2 : "";
-    this.headers = (_d = (_c = settings.global) === null || _c === void 0 ? void 0 : _c.headers) !== null && _d !== void 0 ? _d : {};
-    this.auth = this._initSupabaseAuthClient((_e = settings.auth) !== null && _e !== void 0 ? _e : {}, this.headers, (_f = settings.global) === null || _f === void 0 ? void 0 : _f.fetch);
+    this.headers = (_d2 = (_c2 = settings.global) === null || _c2 === void 0 ? void 0 : _c2.headers) !== null && _d2 !== void 0 ? _d2 : {};
+    this.auth = this._initSupabaseAuthClient((_e2 = settings.auth) !== null && _e2 !== void 0 ? _e2 : {}, this.headers, (_f2 = settings.global) === null || _f2 === void 0 ? void 0 : _f2.fetch);
     this.fetch = fetchWithAuth(supabaseKey, this._getAccessToken.bind(this), (_g = settings.global) === null || _g === void 0 ? void 0 : _g.fetch);
     this.realtime = this._initRealtimeClient(Object.assign({ headers: this.headers }, settings.realtime));
     this.rest = new PostgrestClient(`${_supabaseUrl}/rest/v1`, {
@@ -7688,7 +7714,10 @@ const Fragment = defineComponent({
 const _wrapIf = (component, props, slots) => {
   return { default: () => props ? h(component, props === true ? {} : props, slots) : h(Fragment, {}, slots) };
 };
-const layouts = {};
+const layouts = {
+  catalog: () => import('./catalog.5af33f24.mjs').then((m) => m.default || m),
+  home: () => import('./home.e3e814c1.mjs').then((m) => m.default || m)
+};
 const LayoutLoader = defineComponent({
   props: {
     name: String,
@@ -7771,7 +7800,7 @@ const __nuxt_component_1 = defineComponent({
     return () => {
       return h(RouterView, { name: props.name, route: props.route, ...attrs }, {
         default: (routeProps) => {
-          var _a2, _b2, _c, _d;
+          var _a2, _b2, _c2, _d2;
           if (!routeProps.Component) {
             return;
           }
@@ -7790,7 +7819,7 @@ const __nuxt_component_1 = defineComponent({
             Transition,
             hasTransition && transitionProps,
             wrapInKeepAlive(
-              (_d = (_c = props.keepalive) != null ? _c : routeProps.route.meta.keepalive) != null ? _d : appKeepalive,
+              (_d2 = (_c2 = props.keepalive) != null ? _c2 : routeProps.route.meta.keepalive) != null ? _d2 : appKeepalive,
               h(Suspense, {
                 onPending: () => nuxtApp.callHook("page:start", routeProps.Component),
                 onResolve: () => {
@@ -7829,39 +7858,42 @@ const Component = defineComponent({
     };
   }
 });
-const _sfc_main$1 = /* @__PURE__ */ defineComponent({
-  __name: "app",
-  __ssrInlineRender: true,
-  setup(__props) {
-    return (_ctx, _push, _parent, _attrs) => {
-      const _component_NuxtLayout = __nuxt_component_0;
-      const _component_NuxtPage = __nuxt_component_1;
-      _push(ssrRenderComponent(_component_NuxtLayout, _attrs, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(ssrRenderComponent(_component_NuxtPage, null, null, _parent2, _scopeId));
-          } else {
-            return [
-              createVNode(_component_NuxtPage)
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-    };
+const _export_sfc = (sfc, props) => {
+  const target = sfc.__vccOpts || sfc;
+  for (const [key, val] of props) {
+    target[key] = val;
   }
-});
+  return target;
+};
+const _sfc_main$1 = {};
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  const _component_NuxtLayout = __nuxt_component_0;
+  const _component_NuxtPage = __nuxt_component_1;
+  _push(ssrRenderComponent(_component_NuxtLayout, _attrs, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_NuxtPage, null, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_NuxtPage)
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+}
 const _sfc_setup$1 = _sfc_main$1.setup;
 _sfc_main$1.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("app.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../node_modules/nuxt/dist/pages/runtime/app.vue");
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
+const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["ssrRender", _sfc_ssrRender]]);
 const _sfc_main = {
   __name: "nuxt-root",
   __ssrInlineRender: true,
   setup(__props) {
-    const ErrorComponent = defineAsyncComponent(() => import('./error-component.b312c456.mjs').then((r) => r.default || r));
+    const ErrorComponent = defineAsyncComponent(() => import('./error-component.00698405.mjs').then((r) => r.default || r));
     const nuxtApp = useNuxtApp();
     nuxtApp.deferHydration();
     provide("_route", useRoute());
@@ -7879,7 +7911,7 @@ const _sfc_main = {
           if (unref(error)) {
             _push(ssrRenderComponent(unref(ErrorComponent), { error: unref(error) }, null, _parent));
           } else {
-            _push(ssrRenderComponent(unref(_sfc_main$1), null, null, _parent));
+            _push(ssrRenderComponent(unref(AppComponent), null, null, _parent));
           }
         },
         _: 1
@@ -7890,7 +7922,7 @@ const _sfc_main = {
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/nuxt/dist/app/components/nuxt-root.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../node_modules/nuxt/dist/app/components/nuxt-root.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 if (!globalThis.$fetch) {
@@ -7916,5 +7948,5 @@ const plugins = normalizePlugins(_plugins);
 }
 const entry$1 = (ctx) => entry(ctx);
 
-export { __nuxt_component_0$1 as _, entry$1 as default, useNuxtApp as u };
+export { _export_sfc as _, __nuxt_component_0$1 as a, entry$1 as default, useNuxtApp as u };
 //# sourceMappingURL=server.mjs.map

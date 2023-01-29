@@ -107,7 +107,7 @@ export const useUi = () => {
     subline,
     grayText,
     breadcrumb: grayText + " uppercase mb-1 " + tiny,
-    logo: flexCenterCenter + " bg-white shadow-custom absolute top-[40%] left-[16px] w-[50px] h-[50px] landscape:top-[50%] landscape:left-[40%] landscape:-translate-x-1/2 rounded-full p-2 z-10 -translate-y-1/2",
+    logo: flexCenterCenter + " bg-white shadow-custom absolute top-[40%] left-[16px] w-[50px] h-[50px] landscape:top-[50%] landscape:left-1/2 landscape:-translate-x-1/2 rounded-full p-2 z-10 -translate-y-1/2",
     bottomNavLink: flexCenterCenter + " flex-col cursor-pointer",
     bottomNavLinkIcon: flexCenterCenter + " w-[32px] h-[32px]",
     btn,
