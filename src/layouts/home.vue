@@ -25,6 +25,7 @@ useHead({
   meta: [
     { hid: 'og:image', property: 'og:image', content: "https://tools-n-tuts.vercel.app/images/background_1920x1080v3.jpg" },
     { hid: 'og:title', property: 'og:title', content: "Tools n Tuts" },
+    { hid: 'og:name', property: 'og:name', content: "Tools n Tuts" },
     { hid: 'og:type', property: 'og:type', content: "website" },
     { hid: 'og:description', property: 'og:description', content: "The best open source tools and tutorials you need for work" },
     { hid: 'og:image:type', property: 'og:image:type', content: 'JPEG' },

@@ -1,8 +1,5 @@
 {
   "private": true,
-  "name": "toolsntuts",
-  "description": "The best open source tools and tutorials you need for work",
-  "image": "https://tools-n-tuts.vercel.app/images/background_1920x1080v3.jpg",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
