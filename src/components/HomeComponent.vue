@@ -1,7 +1,7 @@
 <template>
   <div class="h-full">
     <ComboBox :list="list" class="mb-2" />
-    <div class="tool-list grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-9 gap-2">
+    <div class="tool-list grid grid-cols-4 auto-rows-min sm:grid-cols-6 lg:grid-cols-9 gap-2">
       <Tool v-for="(tool, idx) in globalState?.tools" :key="idx" :tool="tool" />
     </div>
   </div>
