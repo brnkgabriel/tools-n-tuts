@@ -22,6 +22,7 @@ const coverObj = {
 const coverStyle = ref(obj2Str(coverObj))
 
 useHead({
+  title: "Tools n Tuts",
   meta: [
     { hid: 'og:image', property: 'og:image', content: "https://tools-n-tuts.vercel.app/images/background_1920x1080v3.jpg" },
     { hid: 'og:title', property: 'og:title', content: "Tools n Tuts" },

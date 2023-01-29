@@ -1,5 +1,7 @@
 {
   "private": true,
+  "name": "toolsntuts",
+  "description": "The best of the open source tools and tutorials you need for work",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
