@@ -1,4 +1,4 @@
-import { iAuthType, iColor, iDynamicObject, iSwitch} from "../types"
+import {iDynamicObject, iSwitch} from "../types"
 
 export const imgSrc = (url: string) => url.length > 0 ? url : '/icons/avatar.svg'
 
@@ -9,14 +9,14 @@ const flexCenterCenter = "flex justify-center items-center"
 const mainline = "text-rcnblue-500 font-semibold text-sm"
 const center = "absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
 const flex_center = "flex flex-col justify-center items-center"
-const btn = "rounded-full bg-white shadow-custom py-2 px-4 text-center cursor-pointer text-rcnblue-500 border-2 text-xs flex justify-center items-center gap-x-2"
+const btn = "rounded-full shadow-custom py-2 px-4 text-center cursor-pointer text-rcnblue-500 border-2 text-xs flex justify-center items-center gap-x-2"
 export const useUi = () => {
   return {
     btmnavwrap: "grid gap-x-2 bg-white z-10 w-full max-w-md",
-    comboinputwrap: "relative w-full cursor-default overflow-hidden rounded-lg bg-white text-left shadow-md md:text-sm",
+    comboinputwrap: "relative w-fit cursor-default overflow-hidden rounded-lg bg-white text-left shadow-md md:text-sm",
     combobutton: "absolute inset-y-0 right-0 flex items-center pr-2",
     chevronupdownicon: "h-5 w-5 text-gray-400",
-    comboboxoptions: "absolute mt-1 h-[150px] w-full overflow-auto rounded-md bg-white py-1 text-sm shadow-lg md:text-sm",
+    comboboxoptions: "absolute mt-1 h-[150px] w-full overflow-auto rounded-md bg-white py-1 text-sm shadow-lg md:text-sm z-10",
     nothingfound: "relative cursor-default select-none py-2 px-4 text-gray-700",
     comboboxoptionli: "relative cursor-default select-none py-2 pl-10 pr-4",
     comboboxoptionspanicon: "absolute inset-y-0 left-0 flex items-center pl-3",
@@ -157,4 +157,8 @@ export const operatingSystem = () => {
   return "unknown";
 }
 
-export const comboInput = () => operatingSystem() === "iOS" ? "w-full border-none py-2 pl-3 pr-10 text-[16px] leading-5 text-gray-900 focus-visible:outline-none" : "w-full border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus-visible:outline-none"
+export const comboInput = () => {
+  let str = "w-full border-none py-2 pl-3 pr-10 leading-5 text-gray-900 focus-visible:outline-none"
+  str += operatingSystem() === "iOS" ? " text-[16px]" : " text-sm"
+  return str
+}

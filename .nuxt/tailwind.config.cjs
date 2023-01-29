@@ -287,7 +287,7 @@ module.exports = {
       "maindark": {
         "500": "#333333"
       },
-      "rcngray": {
+      "maingray": {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
@@ -739,7 +739,7 @@ module.exports = {
       "maindark": {
         "500": "#333333"
       },
-      "rcngray": {
+      "maingray": {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
@@ -1099,7 +1099,7 @@ module.exports = {
       "maindark": {
         "500": "#333333"
       },
-      "rcngray": {
+      "maingray": {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
@@ -1471,7 +1471,7 @@ module.exports = {
       "maindark": {
         "500": "#333333"
       },
-      "rcngray": {
+      "maingray": {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
@@ -1756,7 +1756,7 @@ module.exports = {
       "maindark": {
         "500": "#333333"
       },
-      "rcngray": {
+      "maingray": {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
@@ -2041,7 +2041,7 @@ module.exports = {
       "maindark": {
         "500": "#333333"
       },
-      "rcngray": {
+      "maingray": {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
@@ -2378,7 +2378,7 @@ module.exports = {
       "maindark": {
         "500": "#333333"
       },
-      "rcngray": {
+      "maingray": {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
@@ -2710,7 +2710,7 @@ module.exports = {
       "maindark": {
         "500": "#333333"
       },
-      "rcngray": {
+      "maingray": {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
@@ -3265,7 +3265,7 @@ module.exports = {
       "maindark": {
         "500": "#333333"
       },
-      "rcngray": {
+      "maingray": {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
@@ -4037,7 +4037,7 @@ module.exports = {
       "maindark": {
         "500": "#333333"
       },
-      "rcngray": {
+      "maingray": {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
@@ -4339,7 +4339,7 @@ module.exports = {
       "maindark": {
         "500": "#333333"
       },
-      "rcngray": {
+      "maingray": {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
@@ -4639,7 +4639,7 @@ module.exports = {
       "maindark": {
         "500": "#333333"
       },
-      "rcngray": {
+      "maingray": {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
@@ -4924,7 +4924,7 @@ module.exports = {
       "maindark": {
         "500": "#333333"
       },
-      "rcngray": {
+      "maingray": {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
@@ -5400,7 +5400,7 @@ module.exports = {
       "maindark": {
         "500": "#333333"
       },
-      "rcngray": {
+      "maingray": {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
@@ -5690,7 +5690,7 @@ module.exports = {
       "maindark": {
         "500": "#333333"
       },
-      "rcngray": {
+      "maingray": {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
@@ -5975,7 +5975,7 @@ module.exports = {
       "maindark": {
         "500": "#333333"
       },
-      "rcngray": {
+      "maingray": {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"

@@ -12,6 +12,8 @@
   </div>
 </template>
 <script setup lang="ts">
+import { iComboItem } from '../types';
+
 
 const coverObj = {
   "background-image": "url('/images/background_1920x1080v3.jpg')",

@@ -2,7 +2,7 @@
   <Combobox v-model="selected">
     <div class="relative">
       <div aria-label="combo-input-wrap" :class="comboinputwrap">
-        <ComboboxInput :class="comboInput()" :displayValue="(person: any) => person.name"
+        <ComboboxInput :class="comboInputClass" :displayValue="(person: any) => person.name"
           @change="query = $event.target.value" />
         <ComboboxButton :class="combobutton">
           <ChevronUpDownIcon :class="chevronupdownicon" aria-hidden="true" />
@@ -16,7 +16,7 @@
             Nothing found.
           </div>
 
-          <ComboboxOption v-for="person in filteredPeople" as="template" :key="person.id" :value="person" v-slot="{ selected, active }">
+          <ComboboxOption v-for="person in filteredPeople" as="template" :key="person.name" :value="person" v-slot="{ selected, active }">
             <li aria-label="comboboxoptionli" :class="handleActive(active)">
               <span aria-label="comboboxoptionspan" :class="handleSelected(selected)">
                 {{ person.name }}
@@ -43,15 +43,15 @@ import {
   TransitionRoot,
 } from '@headlessui/vue'
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/vue/24/solid/index'
-import { iPerson, iCombined } from '../types';
+import { iComboItem } from '../types';
 
 const props = defineProps<{
-  persons: iCombined[];
+  list: iComboItem[];
 }>();
 
 const emit = defineEmits<{
-  (e: 'person', person: iPerson): void
-  (e: 'persons', person: iPerson[]): void
+  (e: 'person', person: iComboItem): void
+  (e: 'list', person: iComboItem[]): void
 }>()
 
 const {
@@ -64,6 +64,7 @@ const {
   comboboxoptionspanicon
 } = useUi()
 
+const comboInputClass = ref("")
 const handleActive = (isActive: boolean) => isActive 
   ? `${comboboxoptionli} bg-teal-600 text-white`
   : `${comboboxoptionli} text-gray-900`
@@ -74,11 +75,11 @@ const handleActiveSpan = (isActive: boolean) => isActive
   ? `${comboboxoptionspanicon} text-white`
   : `${comboboxoptionspanicon} text-teal-600`
 
-let people = computed(() => props.persons.map((person: iCombined) => ({ ...person, name: personName(person) })))
-let selected = ref<iPerson>(people.value[0])
+let people = computed(() => props.list)
+let selected = ref<iComboItem>(people.value[0])
 let query = ref('')
 
-const handleFilter = (person: iPerson) => {
+const handleFilter = (person: iComboItem) => {
   return person.name.toLowerCase().replace(/\s+/g, '')
     .includes(query.value.toLowerCase().replace(/\s+/g, ''))
 }
@@ -90,7 +91,11 @@ let filteredPeople = computed(
 
 watch(selected, () => emit("person", selected.value))
 watch(filteredPeople, () => {
-  emit("persons", filteredPeople.value)
+  emit("list", filteredPeople.value)
+})
+
+onMounted(() => {
+  comboInputClass.value = comboInput()
 })
 
 </script>

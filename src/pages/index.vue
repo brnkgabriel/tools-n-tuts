@@ -1,6 +1,6 @@
 <template lang="">
     <div class="font-body">
-        home
+      <HomeComponent />
     </div>
 </template>
 <script setup lang="ts">

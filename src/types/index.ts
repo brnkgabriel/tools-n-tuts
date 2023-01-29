@@ -95,3 +95,7 @@ export interface iMeta {
   consumer_id: number;
   consumer_mac: string;
 }
+
+export interface iComboItem {
+  name: string;
+}
