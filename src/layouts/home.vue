@@ -23,6 +23,12 @@ const coverObj = {
   "background-size": "cover"
 }
 const coverStyle = ref(obj2Str(coverObj))
+
+useHead({
+  meta: [
+    { hid: 'og:image', property: 'og:image', content: "https://tools-n-tuts.vercel.app/images/background_1920x1080v3.jpg" }
+  ]
+})
 </script>
 <style>
 .content {
