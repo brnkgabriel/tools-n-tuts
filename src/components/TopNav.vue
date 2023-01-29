@@ -3,7 +3,7 @@
     <NuxtLink href="/" class="flex justify-center items-center gap-x-1">
       <img :class="topnavlogo" src="/icons/logo.svg" alt="logo" />
       <div class="font-medium text-sm leading-4">
-        <div class="font-semibold">Tools n Tuts</div>
+        <h1 class="font-semibold">Tools n Tuts</h1>
         <div class="text-xxs">Best open source tools & tutorials</div>
       </div>
     </NuxtLink>
