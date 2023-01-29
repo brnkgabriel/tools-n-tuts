@@ -5,14 +5,12 @@
       <div class="font-medium text-sm">Tools n Tuts</div>
     </NuxtLink>
 
-    <NuxtLink href="/donate" :class="btn">
+    <NuxtLink :href="constants.PayPalUrl" target="_blank" :class="btn">
       Donate
     </NuxtLink>
   </div>
 </template>
 <script setup lang="ts">
-
-import { iFWResponse } from "~~/src/types/index"
 
 const {
   topnavwrap,

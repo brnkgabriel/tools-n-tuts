@@ -27,14 +27,14 @@
      showgrid="false"
      showguides="false"
      inkscape:zoom="1.4805048"
-     inkscape:cx="308.34078"
-     inkscape:cy="219.182"
+     inkscape:cx="309.01622"
+     inkscape:cy="219.85744"
      inkscape:window-width="1920"
      inkscape:window-height="991"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg8" />
+     inkscape:current-layer="g327" />
   <g
      id="g327"
      transform="matrix(1.6184016,0,0,1.6184016,0.09929487,-106.9841)">
@@ -51,6 +51,6 @@
        d="m 112.44697,227.10251 42.46026,42.45029 a 34.258892,34.258892 0 0 0 48.44945,-48.44933 l -33.55803,-33.54799 a 69.055237,69.055237 0 0 1 -15.53061,0.43627 c -4.00012,-0.34481 -6.92268,-0.0632 -8.8013,0.42684 a 5.9787644,5.9787644 0 0 0 -1.69469,0.63916 z m 34.6545,-13.80488 a 7.6130274,7.6130274 0 0 1 10.75987,0 l 19.03241,19.04271 a 7.6130274,7.6130274 0 1 1 -10.75988,10.75978 l -19.0324,-19.03264 a 7.6130274,7.6130274 0 0 1 0,-10.75966 z"
        clip-rule="evenodd"
        id="path4661"
-       style="fill:#333333;fill-opacity:1;stroke-width:10.1507" />
+       style="fill:#ec6600;fill-opacity:1;stroke-width:10.1507" />
   </g>
 </svg>
