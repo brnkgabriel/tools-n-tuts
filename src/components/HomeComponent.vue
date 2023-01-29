@@ -1,8 +1,8 @@
 <template>
-  <div class="h-1/2">
-    <ComboBox :list="list" />
-    <div class="h-[200px] overflow-auto">
-      <div v-for="(tool, idx) in globalState?.tools" :key="idx">{{ tool.name }}</div>
+  <div class="h-full">
+    <ComboBox :list="list" class="mb-2" />
+    <div class="tool-list grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-9 gap-2">
+      <Tool v-for="(tool, idx) in globalState?.tools" :key="idx" :tool="tool" />
     </div>
   </div>
 </template>
@@ -30,3 +30,10 @@ const list:iComboItem[] = [
 ]
 
 </script>
+<style>
+.tool-list {
+  height: calc(100% - 44px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+</style>

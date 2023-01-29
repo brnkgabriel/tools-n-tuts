@@ -100,7 +100,7 @@ export interface iComboItem {
   name: string;
 }
 
-export interface iTools {
+export interface iTool {
   name: string;
   homepage: string;
   download_page: string;
@@ -110,7 +110,7 @@ export interface iTools {
   about: string;
 }
 
-export interface iTuts {
+export interface iTut {
   name: string;
   category: string;
   url: string;
@@ -119,6 +119,6 @@ export interface iTuts {
 }
 
 export interface iGlobal {
-  tools: iTools[];
-  tuts: iTuts[];
+  tools: iTool[];
+  tuts: iTut[];
 }

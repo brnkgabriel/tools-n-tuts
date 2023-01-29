@@ -1,7 +1,5 @@
-<template lang="">
-    <div class="font-body">
-      <HomeComponent />
-    </div>
+<template>
+  <HomeComponent />
 </template>
 <script setup lang="ts">
 

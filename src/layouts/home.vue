@@ -1,11 +1,11 @@
 <template>
   <div class="h-full w-screen font-body overflow-x-hidden">
     <TopNav class="h-[56px] px-2" />
-    <div class="grid auto-rows-max md:auto-rows-fr grid-cols-1 md:grid-cols-2 relative content"> 
-      <div aria-label="slides" class="relative w-full overflow-hidden slides">
+    <div class="md:grid md:grid-cols-2 relative content"> 
+      <div aria-label="slides" class="relative w-full overflow-hidden slides h-40% md:h-full">
         <div aria-label="slide" class="h-full w-full flex items-center justify-center" :style="coverStyle"></div>
       </div>
-      <div class="p-2">
+      <div class="p-2 h-60% md:h-full">
         <slot></slot>
       </div>
     </div>
@@ -39,14 +39,5 @@ useHead({
 <style>
 .content {
   height: calc(100% - 56px);
-}
-
-@media screen and (max-width: 767px) {
-  
-  .slides {
-    height: 56.25vw;
-    max-height: 432px;
-  }
-
 }
 </style>
