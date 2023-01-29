@@ -1,17 +1,17 @@
 <template>
   <div class="h-full w-screen font-body overflow-x-hidden">
     <TopNav class="h-[56px] px-2" />
-    <div class="grid grid-cols-1 sm:grid-cols-2 relative content"> 
+    <div class="grid grid-cols-1 md:grid-cols-2 relative content"> 
       <div aria-label="slides" class="relative w-full overflow-hidden">
         <div aria-label="slide" class="h-full w-full flex items-center justify-center" :style="coverStyle"></div>
       </div>
-      <slot></slot>
+      <div class="p-2">
+        <slot></slot>
+      </div>
     </div>
   </div>
 </template>
 <script setup lang="ts">
-
-const { logo, homelayoutbottomcontentwrap } = useUi()
 
 const coverObj = {
   "background-image": "url('/images/background_1920x1080v3.jpg')",

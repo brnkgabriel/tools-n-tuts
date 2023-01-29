@@ -95,7 +95,7 @@ export const useUi = () => {
     topnavwrap: "shadow-custom bg-white flex justify-between items-center relative",
     topnavnotification: "rounded-full border-2 border-bglight-700 p-[2px] h-[40px] w-[40px] cursor-pointer",
     topnavavatar: "rounded-full",
-    topnavlogo: "h-[32px]",
+    topnavlogo: "h-[28px]",
     topnavsitename: `${center} ${flex_center} ${mainline} uppercase font-bold font-body`,
     // common styles below
     texttrim: "w-full overflow-hidden whitespace-nowrap text-ellipsis",
