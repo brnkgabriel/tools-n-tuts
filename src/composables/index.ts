@@ -1,4 +1,4 @@
-import {iDynamicObject, iSwitch} from "../types"
+import {iDynamicObject, iGlobal, iSwitch, iTools, iTuts} from "../types"
 
 export const imgSrc = (url: string) => url.length > 0 ? url : '/icons/avatar.svg'
 
@@ -132,7 +132,9 @@ export const constants = {
   donateApiUrl: "/api/p-payment",
   PayPalUrl: "https://www.paypal.com/donate/?hosted_button_id=5974UT4X3NAJJ",
   toolsApiUrl: "/api/g-data/?path=tools",
-  tutsApiUrl: "/api/g-data/?path=tuts"
+  tutsApiUrl: "/api/g-data/?path=tuts",
+  toolsnTutsApi: "/api/g-data",
+  globals: "globals"
 }
 
 export const operatingSystem = () => {
@@ -161,4 +163,14 @@ export const comboInput = () => {
   let str = "w-full border-none py-2 pl-3 pr-10 leading-5 text-gray-900 focus-visible:outline-none"
   str += operatingSystem() === "iOS" ? " text-[16px]" : " text-sm"
   return str
+}
+
+export const useGlobals = () => {
+  const globalState = useState<iGlobal>(constants.globals)
+  
+  const setGlobals = (global: iGlobal) => {
+    globalState.value = global
+  }
+
+  return { setGlobals, globalState }
 }

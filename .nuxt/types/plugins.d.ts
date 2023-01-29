@@ -13,7 +13,8 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/@nuxtjs/supabase/dist/runtime/plugins/auth-redirect").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/supabase/dist/runtime/plugins/supabase.client").default> &
   InjectionType<typeof import("../../node_modules/@nuxtjs/supabase/dist/runtime/plugins/supabase.server").default> &
-  InjectionType<typeof import("../../node_modules/@nuxt/image-edge/dist/runtime/plugin").default>
+  InjectionType<typeof import("../../node_modules/@nuxt/image-edge/dist/runtime/plugin").default> &
+  InjectionType<typeof import("../../src/plugins/init").default>
 
 declare module '#app' {
   interface NuxtApp extends NuxtAppInjections { }

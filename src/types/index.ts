@@ -99,3 +99,26 @@ export interface iMeta {
 export interface iComboItem {
   name: string;
 }
+
+export interface iTools {
+  name: string;
+  homepage: string;
+  download_page: string;
+  category: string;
+  logo: string;
+  image: string;
+  about: string;
+}
+
+export interface iTuts {
+  name: string;
+  category: string;
+  url: string;
+  tools: string;
+  about: string;
+}
+
+export interface iGlobal {
+  tools: iTools[];
+  tuts: iTuts[];
+}
