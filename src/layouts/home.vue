@@ -26,7 +26,11 @@ const coverStyle = ref(obj2Str(coverObj))
 
 useHead({
   meta: [
-    { hid: 'og:image', property: 'og:image', content: "https://tools-n-tuts.vercel.app/images/background_1920x1080v3.jpg" }
+    { hid: 'og:image', property: 'og:image', content: "https://tools-n-tuts.vercel.app/images/background_1920x1080v3.jpg" },
+    { hid: 'og:title', property: 'og:title', content: "Tools n Tuts" },
+    { hid: 'og:type', property: 'og:type', content: "website" },
+    { hid: 'og:url', property: 'og:url', content: "https://tools-n-tuts.vercel.app/" },
+    { hid: 'keywords', name: 'keywords', content: "tools, tuts, productivity, plus, open, source, open source, design, develop, animate, blender, 3D, programming, JavaScript, editing, audio, video, modeling, animation, rendering, applications, apps, tutorials, ui/ux, drawing" }
   ]
 })
 </script>

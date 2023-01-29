@@ -40,8 +40,6 @@ declare module '@nuxt/schema' {
         theme_color: string,
 
         icons: Array<any>,
-
-        scope: string,
     },
 
     supabase: {
