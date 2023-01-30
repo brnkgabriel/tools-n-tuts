@@ -1,6 +1,6 @@
 <template>
   <div :aria-label="tool.name" class="cursor-pointer bg-white hover:shadow-custom p-2">
-    <img class="w-1/2 mx-auto" :src="tool.logo" :alt="tool.name"/>
+    <img class="w-3/4 mx-auto" :src="tool.logo" :alt="tool.name"/>
     <div class="tool-name" :class="subline_small">{{ tool.name }}</div>
   </div>
 </template>

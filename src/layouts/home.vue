@@ -12,15 +12,15 @@
   </div>
 </template>
 <script setup lang="ts">
-import { iGlobal } from '../types';
 
-const coverObj = {
-  "background-image": "url('/images/background_1920x1080v3.jpg')",
+const { globalState } = useGlobals()
+
+const coverStyle = computed(() => obj2Str({
+  "background-image": `url(${globalState.value.background})`,
   "background-repeat": "no-repeat",
   "background-position": "center",
   "background-size": "cover"
-}
-const coverStyle = ref(obj2Str(coverObj))
+}))
 
 useHead({
   title: "Tools n Tuts",

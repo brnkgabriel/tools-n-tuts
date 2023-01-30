@@ -121,4 +121,5 @@ export interface iTut {
 export interface iGlobal {
   tools: iTool[];
   tuts: iTut[];
+  background: string;
 }

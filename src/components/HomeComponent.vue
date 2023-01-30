@@ -2,23 +2,27 @@
   <div class="h-full">
     <ComboBox :list="list" class="mb-2" />
     <div class="tool-list grid grid-cols-4 auto-rows-min sm:grid-cols-6 lg:grid-cols-9 gap-2">
-      <Tool v-for="(tool, idx) in globalState?.tools" :key="idx" :tool="tool" />
+      <Tool v-for="(tool, idx) in globalState?.tools" :key="idx" :tool="tool" @click="handleClick(tool)" />
     </div>
   </div>
 </template>
 <script setup lang="ts">
-import { iComboItem, iGlobal } from '../types';
+import { iComboItem, iGlobal, iTool } from '../types';
 
-const { setGlobals, globalState } = useGlobals()
+const { setTools, setTuts, globalState, setBackground } = useGlobals()
 
 const options = { path: "" } 
 
 const { data, refresh } = await useLazyFetch(() => constants.toolsnTutsApi, { params: { ...options } })
 
 watch(data, () => {
-  setGlobals(data.value as iGlobal)
+  const globals: iGlobal = data.value as iGlobal
+  setTools(globals.tools)
+  setTuts(globals.tuts)
   console.log("from home component, globalState is", globalState.value)
 })
+
+const handleClick = (tool: iTool) => setBackground(tool.image)
 
 onMounted(async () => await refresh() )
 

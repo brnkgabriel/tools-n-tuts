@@ -1,4 +1,4 @@
-import {iDynamicObject, iGlobal, iSwitch, iTools, iTuts} from "../types"
+import {iDynamicObject, iGlobal, iSwitch, iTool, iTut } from "../types"
 
 export const imgSrc = (url: string) => url.length > 0 ? url : '/icons/avatar.svg'
 
@@ -172,5 +172,10 @@ export const useGlobals = () => {
     globalState.value = global
   }
 
-  return { setGlobals, globalState }
+  const setTools = (tools: iTool[]) => globalState.value.tools = tools
+  const setTuts = (tuts: iTut[]) => globalState.value.tuts = tuts
+
+  const setBackground = (value: string) => globalState.value.background = value
+
+  return { setGlobals, globalState, setBackground, setTools, setTuts }
 }
