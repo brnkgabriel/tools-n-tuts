@@ -1,7 +1,7 @@
 <template>
   <div class="h-full">
     <ComboBox :list="list" class="mb-2" />
-    <div class="tool-list grid grid-cols-4 auto-rows-min sm:grid-cols-6 lg:grid-cols-9 gap-2">
+    <div class="tool-list grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-9 gap-2 auto-rows-[minmax(82px,_0fr)]">
       <Tool v-for="(tool, idx) in globalState?.tools" :key="idx" :tool="tool" @click="handleClick(tool)" />
     </div>
   </div>
@@ -19,7 +19,6 @@ watch(data, () => {
   const globals: iGlobal = data.value as iGlobal
   setTools(globals.tools)
   setTuts(globals.tuts)
-  console.log("from home component, globalState is", globalState.value)
 })
 
 const handleClick = (tool: iTool) => setBackground(tool.image)
