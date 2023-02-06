@@ -31,6 +31,9 @@ module.exports = {
           500: "#f5f5f5",
           700: "#eaeded",
           900: "#75757a"
+        },
+        paystack: {
+          500: "#0AA5DB"
         }
       },
       fontSize: {

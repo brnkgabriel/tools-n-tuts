@@ -291,6 +291,9 @@ module.exports = {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
+      },
+      "paystack": {
+        "500": "#0AA5DB"
       }
     },
     "columns": {
@@ -743,6 +746,9 @@ module.exports = {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
+      },
+      "paystack": {
+        "500": "#0AA5DB"
       }
     },
     "backgroundImage": {
@@ -1103,6 +1109,9 @@ module.exports = {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
+      },
+      "paystack": {
+        "500": "#0AA5DB"
       },
       "DEFAULT": "#e5e7eb"
     },
@@ -1475,6 +1484,9 @@ module.exports = {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
+      },
+      "paystack": {
+        "500": "#0AA5DB"
       }
     },
     "caretColor": {
@@ -1760,6 +1772,9 @@ module.exports = {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
+      },
+      "paystack": {
+        "500": "#0AA5DB"
       }
     },
     "accentColor": {
@@ -2045,6 +2060,9 @@ module.exports = {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
+      },
+      "paystack": {
+        "500": "#0AA5DB"
       },
       "auto": "auto"
     },
@@ -2383,6 +2401,9 @@ module.exports = {
         "700": "#eaeded",
         "900": "#75757a"
       },
+      "paystack": {
+        "500": "#0AA5DB"
+      },
       "DEFAULT": "#e5e7eb"
     },
     "divideOpacity": {
@@ -2714,6 +2735,9 @@ module.exports = {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
+      },
+      "paystack": {
+        "500": "#0AA5DB"
       }
     },
     "grayscale": {
@@ -3269,6 +3293,9 @@ module.exports = {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
+      },
+      "paystack": {
+        "500": "#0AA5DB"
       }
     },
     "gridAutoColumns": {
@@ -4041,6 +4068,9 @@ module.exports = {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
+      },
+      "paystack": {
+        "500": "#0AA5DB"
       }
     },
     "placeholderOpacity": {
@@ -4343,6 +4373,9 @@ module.exports = {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
+      },
+      "paystack": {
+        "500": "#0AA5DB"
       }
     },
     "outlineOffset": {
@@ -4643,6 +4676,9 @@ module.exports = {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
+      },
+      "paystack": {
+        "500": "#0AA5DB"
       }
     },
     "ringOffsetColor": {
@@ -4928,6 +4964,9 @@ module.exports = {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
+      },
+      "paystack": {
+        "500": "#0AA5DB"
       }
     },
     "ringOffsetWidth": {
@@ -5404,6 +5443,9 @@ module.exports = {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
+      },
+      "paystack": {
+        "500": "#0AA5DB"
       }
     },
     "strokeWidth": {
@@ -5694,6 +5736,9 @@ module.exports = {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
+      },
+      "paystack": {
+        "500": "#0AA5DB"
       }
     },
     "textDecorationColor": {
@@ -5979,6 +6024,9 @@ module.exports = {
         "500": "#f5f5f5",
         "700": "#eaeded",
         "900": "#75757a"
+      },
+      "paystack": {
+        "500": "#0AA5DB"
       }
     },
     "textDecorationThickness": {

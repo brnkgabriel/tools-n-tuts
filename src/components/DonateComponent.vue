@@ -1,39 +1,19 @@
 <template>
-  <div>
-    <div>Kindly make your selection</div>
-    <SwitchComp left="NGN" right="USD" name="currency" :value="updateCurrency" />
-    
-    <!-- <div :class="btn" @click="handleDonate">
-      <Spinloader />
-      <DonateIcon />
-      <div>Submit</div>
-    </div> -->
-    <NuxtLink :href="constants.PayPalUrl" target="_blank" :class="btn">Donate</NuxtLink>
+  <div class="text-center">
+    <div :class="mainline_small">Kindly make your selection</div>
+    <div class="flex flex-col gap-y-2 justify-center items-center pt-1">
+      <NuxtLink :href="constants.PayPalUrl" target="_blank" :class="btn" class="bg-mainblue-500 text-white w-1/2">
+        PayPal ($)
+      </NuxtLink>
+      
+      <NuxtLink :href="constants.PaystackUrl" target="_blank" :class="btn" class="bg-paystack-500 font-body text-white w-1/2">
+        Paystack (&#8358;)
+      </NuxtLink>
+    </div>
   </div>
 </template>
 <script setup lang="ts">
-import { iDonate, iFWResponse } from '../types';
-import { loadScript } from "@paypal/paypal-js"
-
-const donateRef = ref<iDonate>({
-  txReference: `john-doe${Date.now()}`,
-  amount: "500",
-  currency: "NGN",
-  customer: {
-    email: "john.doe@gmail.com",
-    name: "John Doe",
-    phonenumber: "+234 815 310 8276"
-  },
-  meta: {
-    consumer_id: Date.now(),
-    consumer_mac: `john-doe${Date.now()}`
-  }
-})
-
-const { btn } = useUi()
-
-const updateCurrency = (value: string) => donateRef.value.currency = value
-
+  const { btn, mainline_small } = useUi()
 </script>
 <style lang="">
   

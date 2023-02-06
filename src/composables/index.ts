@@ -131,6 +131,7 @@ export const obj2Str = (obj: iDynamicObject) => Object.keys(obj)
 export const constants = {
   donateApiUrl: "/api/p-payment",
   PayPalUrl: "https://www.paypal.com/donate/?hosted_button_id=5974UT4X3NAJJ",
+  PaystackUrl: "https://paystack.com/pay/tools-n-tuts",
   toolsApiUrl: "/api/g-data/?path=tools",
   tutsApiUrl: "/api/g-data/?path=tuts",
   toolsnTutsApi: "/api/g-data",
