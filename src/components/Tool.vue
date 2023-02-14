@@ -12,7 +12,7 @@ defineProps<{ tool: iTool }>()
 const { subline_small } = useUi()
 </script>
 
-<style>
+<style scoped>
 .tool-name {
   width: 80%;
   margin: 0 auto;
