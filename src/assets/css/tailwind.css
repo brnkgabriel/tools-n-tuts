@@ -71,7 +71,6 @@ body {
 }
 
 .-grid > div {
-  background-color: palegreen;
   padding: 8px;
   display: grid;
   position: relative;
