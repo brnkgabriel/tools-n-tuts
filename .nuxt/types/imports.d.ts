@@ -3,6 +3,7 @@ export {}
 declare global {
   const abortNavigation: typeof import('../../node_modules/nuxt/dist/app')['abortNavigation']
   const addRouteMiddleware: typeof import('../../node_modules/nuxt/dist/app')['addRouteMiddleware']
+  const all: typeof import('../../src/composables/index')['all']
   const clearError: typeof import('../../node_modules/nuxt/dist/app')['clearError']
   const clearNuxtData: typeof import('../../node_modules/nuxt/dist/app')['clearNuxtData']
   const comboInput: typeof import('../../src/composables/index')['comboInput']
@@ -20,6 +21,7 @@ declare global {
   const definePageMeta: typeof import('../../node_modules/nuxt/dist/pages/runtime/composables')['definePageMeta']
   const effect: typeof import('vue')['effect']
   const effectScope: typeof import('vue')['effectScope']
+  const el: typeof import('../../src/composables/index')['el']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
   const h: typeof import('vue')['h']
@@ -38,6 +40,7 @@ declare global {
   const markRaw: typeof import('vue')['markRaw']
   const navigateTo: typeof import('../../node_modules/nuxt/dist/app')['navigateTo']
   const nextTick: typeof import('vue')['nextTick']
+  const num2List: typeof import('../../src/composables/index')['num2List']
   const obj2Str: typeof import('../../src/composables/index')['obj2Str']
   const onActivated: typeof import('vue')['onActivated']
   const onBeforeMount: typeof import('vue')['onBeforeMount']
@@ -72,6 +75,7 @@ declare global {
   const shallowReadonly: typeof import('vue')['shallowReadonly']
   const shallowRef: typeof import('vue')['shallowRef']
   const showError: typeof import('../../node_modules/nuxt/dist/app')['showError']
+  const skeletonTools: typeof import('../../src/composables/index')['skeletonTools']
   const toRaw: typeof import('vue')['toRaw']
   const toRef: typeof import('vue')['toRef']
   const toRefs: typeof import('vue')['toRefs']
@@ -123,6 +127,7 @@ declare module 'vue' {
   interface ComponentCustomProperties {
     readonly abortNavigation: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['abortNavigation']>
     readonly addRouteMiddleware: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['addRouteMiddleware']>
+    readonly all: UnwrapRef<typeof import('../../src/composables/index')['all']>
     readonly clearError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['clearError']>
     readonly clearNuxtData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['clearNuxtData']>
     readonly comboInput: UnwrapRef<typeof import('../../src/composables/index')['comboInput']>
@@ -140,6 +145,7 @@ declare module 'vue' {
     readonly definePageMeta: UnwrapRef<typeof import('../../node_modules/nuxt/dist/pages/runtime/composables')['definePageMeta']>
     readonly effect: UnwrapRef<typeof import('vue')['effect']>
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
+    readonly el: UnwrapRef<typeof import('../../src/composables/index')['el']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
@@ -158,6 +164,7 @@ declare module 'vue' {
     readonly markRaw: UnwrapRef<typeof import('vue')['markRaw']>
     readonly navigateTo: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['navigateTo']>
     readonly nextTick: UnwrapRef<typeof import('vue')['nextTick']>
+    readonly num2List: UnwrapRef<typeof import('../../src/composables/index')['num2List']>
     readonly obj2Str: UnwrapRef<typeof import('../../src/composables/index')['obj2Str']>
     readonly onActivated: UnwrapRef<typeof import('vue')['onActivated']>
     readonly onBeforeMount: UnwrapRef<typeof import('vue')['onBeforeMount']>
@@ -192,6 +199,7 @@ declare module 'vue' {
     readonly shallowReadonly: UnwrapRef<typeof import('vue')['shallowReadonly']>
     readonly shallowRef: UnwrapRef<typeof import('vue')['shallowRef']>
     readonly showError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['showError']>
+    readonly skeletonTools: UnwrapRef<typeof import('../../src/composables/index')['skeletonTools']>
     readonly toRaw: UnwrapRef<typeof import('vue')['toRaw']>
     readonly toRef: UnwrapRef<typeof import('vue')['toRef']>
     readonly toRefs: UnwrapRef<typeof import('vue')['toRefs']>

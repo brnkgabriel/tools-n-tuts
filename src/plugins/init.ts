@@ -6,6 +6,7 @@ export default defineNuxtPlugin(nuxtApp => {
   useState<iGlobal>(constants.globals, () => ({
     tools: [],
     tuts: [],
+    categories: [],
     background: "/images/background_1920x1080v3.jpg"
   }))
 })

@@ -17,3 +17,68 @@ body {
   opacity: 1 !important;
   transition: opacity .2s linear;
 }
+
+
+.-preloader.-loading {
+  background-color: var(--preloader-gray);
+  background-size: 550px;
+  opacity: 1
+}
+
+.-preloader {
+  width: 101%;
+  height: 103%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  opacity: 0;
+  overflow: hidden
+}
+
+.-preloader::before {
+  position: absolute;
+  content: '';
+  animation: unset;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent)
+}
+
+.-preloader.-loading::before {
+  animation: ssc-loading 1.3s infinite
+}
+
+@keyframes ssc-loading {
+  from {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%)
+  }
+
+  to {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%)
+  }
+}
+
+.-grid {
+  height: calc(100% - 44px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(82px, 1fr));
+  gap: 8px;
+}
+
+.-grid > div {
+  background-color: palegreen;
+  padding: 8px;
+  display: grid;
+  position: relative;
+}
+
+.-grid > div::before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}

@@ -1,42 +1,35 @@
 <template>
   <div class="h-full">
-    <ComboBox :list="list" class="mb-2" />
-    <div class="tool-list grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-9 gap-2 auto-rows-[minmax(82px,_0fr)]">
+    <ComboBox v-if="globalState.categories.length > 0" :list="list" class="mb-2" />
+    <div v-show="isLoaded" class="-grid">
       <Tool v-for="(tool, idx) in globalState?.tools" :key="idx" :tool="tool" @click="handleClick(tool)" />
+    </div>
+    <div v-show="!isLoaded" class="-grid">
+      <Tool v-for="(tool, idx) in skeletonTools" :key="idx" :tool="tool" />
     </div>
   </div>
 </template>
 <script setup lang="ts">
 import { iComboItem, iGlobal, iTool } from '../types';
 
-const { setTools, setTuts, globalState, setBackground } = useGlobals()
+const { setTools, setTuts, globalState, setBackground, setCategories } = useGlobals()
+const isLoaded = computed(() => globalState.value.tools.length > 0)
+const list = computed(() => globalState.value.categories.map((name: string) => ({ name })))
 
 const options = { path: "" } 
-
 const { data, refresh } = await useLazyFetch(() => constants.toolsnTutsApi, { params: { ...options } })
 
 watch(data, () => {
   const globals: iGlobal = data.value as iGlobal
+
+  console.log("globals", globals)
   setTools(globals.tools)
   setTuts(globals.tuts)
+  setCategories(globals.categories)
 })
 
 const handleClick = (tool: iTool) => setBackground(tool.image)
 
 onMounted(async () => await refresh() )
 
-const list:iComboItem[] = [
-  { name: "Audio Editing" },
-  { name: "Video Editing" },
-  { name: "3D Modeling & Animation" },
-  { name: "Utilities" }
-]
-
 </script>
-<style>
-.tool-list {
-  height: calc(100% - 44px);
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-</style>

@@ -27,7 +27,7 @@ declare module '@nuxt/schema' {
 
         short_name: string,
 
-        description: string,
+        description: any,
 
         lang: string,
 

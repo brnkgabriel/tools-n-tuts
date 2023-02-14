@@ -1,6 +1,7 @@
 import {iDynamicObject, iGlobal, iSwitch, iTool, iTut } from "../types"
 
 export const imgSrc = (url: string) => url.length > 0 ? url : '/icons/avatar.svg'
+export const num2List = (num: number) => Array.from(Array(num).keys())
 
 const subline = "text-xs"
 const tiny = "text-xxxs font-bold"
@@ -135,7 +136,8 @@ export const constants = {
   toolsApiUrl: "/api/g-data/?path=tools",
   tutsApiUrl: "/api/g-data/?path=tuts",
   toolsnTutsApi: "/api/g-data",
-  globals: "globals"
+  globals: "globals",
+  maxItemsToLoad: 10
 }
 
 export const operatingSystem = () => {
@@ -166,6 +168,9 @@ export const comboInput = () => {
   return str
 }
 
+export const all = (query: string, parent?: HTMLElement) => parent ? parent.querySelectorAll(query) : document.querySelectorAll(query)
+export const el = (query: string, parent?: HTMLElement) => parent ? parent.querySelector(query) : document.querySelector(query)
+
 export const useGlobals = () => {
   const globalState = useState<iGlobal>(constants.globals)
   
@@ -175,8 +180,19 @@ export const useGlobals = () => {
 
   const setTools = (tools: iTool[]) => globalState.value.tools = tools
   const setTuts = (tuts: iTut[]) => globalState.value.tuts = tuts
+  const setCategories = (categories: string[]) => globalState.value.categories = categories
 
   const setBackground = (value: string) => globalState.value.background = value
 
-  return { setGlobals, globalState, setBackground, setTools, setTuts }
+  return { setGlobals, globalState, setBackground, setTools, setTuts, setCategories }
 }
+
+export const skeletonTools: iTool[] = num2List(40).map(() => ({
+  about: "",
+  category: "",
+  download_page: "",
+  homepage: "",
+  image: "",
+  logo: "/images/placeholder.svg",
+  name: "loading..."
+}))

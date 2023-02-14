@@ -56,7 +56,8 @@ module.exports = {
         'middle': 'calc(100% - 128px)',
         'listheight': 'calc(100% - 207px)',
         'cardlistheight': 'calc(100% - 28px)',
-        'form': 'calc(100% - 16px)'
+        'form': 'calc(100% - 16px)',
+        'toolHeight': 'calc(100% - 16px)'
       },
       spacing: {
         "half": "calc(50% + 1px)"
