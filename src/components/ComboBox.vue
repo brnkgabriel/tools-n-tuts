@@ -5,7 +5,7 @@
         <ComboboxInput :class="comboInputClass" :displayValue="(person: any) => person.name"
           @change="query = $event.target.value" />
         <ComboboxButton :class="combobutton">
-          <ChevronUpDownIcon :class="chevronupdownicon" aria-hidden="true" />
+          <!-- <ChevronUpDownIcon :class="chevronupdownicon" aria-hidden="true" /> -->
         </ComboboxButton>
       </div>
       <TransitionRoot leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
@@ -22,7 +22,7 @@
                 {{ person.name }}
               </span>
               <span aria-label="comboboxoptionspanicon" v-if="selected" :class="handleActiveSpan(active)">
-                <CheckIcon class="h-5 w-5" aria-hidden="true" />
+                <!-- <CheckIcon class="h-5 w-5" aria-hidden="true" /> -->
               </span>
             </li>
           </ComboboxOption>
@@ -42,7 +42,7 @@ import {
   ComboboxOption,
   TransitionRoot,
 } from '@headlessui/vue'
-import { CheckIcon, ChevronUpDownIcon } from '@heroicons/vue/24/solid/index'
+// import { CheckIcon, ChevronUpDownIcon } from '@heroicons/vue/24/solid/index'
 import { iComboItem } from '../types';
 
 const props = defineProps<{
