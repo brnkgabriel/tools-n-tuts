@@ -20,20 +20,15 @@ body {
 
 
 .-preloader.-loading {
-  background-color: var(--preloader-gray);
+  background-color: #dfdfdf;
   background-size: 550px;
   opacity: 1
 }
 
 .-preloader {
-  width: 101%;
-  height: 103%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
   z-index: 2;
   opacity: 0;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .-preloader::before {
