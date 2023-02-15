@@ -3,6 +3,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     'BottomNav': typeof import("../src/components/BottomNav.vue")['default']
     'ComboBox': typeof import("../src/components/ComboBox.vue")['default']
+    'Donate': typeof import("../src/components/Donate.vue")['default']
     'DonateComponent': typeof import("../src/components/DonateComponent.vue")['default']
     'DonateIcon': typeof import("../src/components/DonateIcon.vue")['default']
     'HomeComponent': typeof import("../src/components/HomeComponent.vue")['default']
@@ -32,6 +33,7 @@ declare module '@vue/runtime-core' {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyBottomNav': typeof import("../src/components/BottomNav.vue")['default']
     'LazyComboBox': typeof import("../src/components/ComboBox.vue")['default']
+    'LazyDonate': typeof import("../src/components/Donate.vue")['default']
     'LazyDonateComponent': typeof import("../src/components/DonateComponent.vue")['default']
     'LazyDonateIcon': typeof import("../src/components/DonateIcon.vue")['default']
     'LazyHomeComponent': typeof import("../src/components/HomeComponent.vue")['default']
@@ -64,6 +66,7 @@ declare module '@vue/runtime-core' {
 
 export const BottomNav: typeof import("../src/components/BottomNav.vue")['default']
 export const ComboBox: typeof import("../src/components/ComboBox.vue")['default']
+export const Donate: typeof import("../src/components/Donate.vue")['default']
 export const DonateComponent: typeof import("../src/components/DonateComponent.vue")['default']
 export const DonateIcon: typeof import("../src/components/DonateIcon.vue")['default']
 export const HomeComponent: typeof import("../src/components/HomeComponent.vue")['default']
@@ -93,6 +96,7 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyBottomNav: typeof import("../src/components/BottomNav.vue")['default']
 export const LazyComboBox: typeof import("../src/components/ComboBox.vue")['default']
+export const LazyDonate: typeof import("../src/components/Donate.vue")['default']
 export const LazyDonateComponent: typeof import("../src/components/DonateComponent.vue")['default']
 export const LazyDonateIcon: typeof import("../src/components/DonateIcon.vue")['default']
 export const LazyHomeComponent: typeof import("../src/components/HomeComponent.vue")['default']

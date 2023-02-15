@@ -8,8 +8,8 @@
       </div>
     </NuxtLink>
 
-    <NuxtLink href="/donate" :class="btn" class="bg-mainblue-500 text-white">
-      Donate
+    <NuxtLink href="/donate" :class="btn" class="text-white">
+      <Donate />
     </NuxtLink>
   </div>
 </template>
