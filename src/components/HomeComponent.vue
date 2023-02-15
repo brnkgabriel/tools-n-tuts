@@ -16,7 +16,7 @@ const { setTools, setTuts, globalState, setBackground, setCategories } = useGlob
 const isLoaded = computed(() => globalState.value.tools.length > 0)
 const list = computed(() => globalState.value.categories.map((name: string) => ({ name })))
 
-const options = { path: "" } 
+const options = { path: "" }  
 const { data, refresh } = await useLazyFetch(() => constants.toolsnTutsApi, { params: { ...options } })
 
 watch(data, () => {
