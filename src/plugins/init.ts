@@ -2,7 +2,7 @@ import { iGlobal, iTool } from "~~/src/types"
 import { constants } from "../composables"
 
 const tool: iTool = {
-  about: "The best source tools and tutorials you need for work",
+  about: "The best open source tools and tutorials you need for work",
   category: "",
   download_page: "",
   homepage: "",

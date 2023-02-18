@@ -1,6 +1,6 @@
 <template>
   <div class="absolute about">
-    {{ tool.about }}
+    <h1>{{ tool.about }}</h1>
   </div>
 </template>
 <script setup lang="ts">

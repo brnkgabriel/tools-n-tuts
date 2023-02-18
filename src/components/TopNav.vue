@@ -4,7 +4,7 @@
       <img :class="topnavlogo" src="/icons/logo.svg" alt="logo" />
       <div class="font-medium text-sm leading-4">
         <h1 class="font-semibold">Tools n Tuts</h1>
-        <div class="text-xxs">Open source tools & tutorials</div>
+        <div class="text-xxs">Open source++</div>
       </div>
     </NuxtLink>
 

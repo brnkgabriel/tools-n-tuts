@@ -14,7 +14,7 @@ const btn = "rounded-full shadow-custom py-2 px-4 text-center cursor-pointer tex
 export const useUi = () => {
   return {
     btmnavwrap: "grid gap-x-2 bg-white z-10 w-full max-w-md",
-    comboinputwrap: "relative w-fit cursor-default overflow-hidden rounded-lg bg-white text-left shadow-md md:text-sm",
+    comboinputwrap: "relative w-full sm:w-fit cursor-default overflow-hidden rounded-lg bg-white text-left shadow-md md:text-sm",
     combobutton: "absolute inset-y-0 right-0 flex items-center pr-2",
     chevronupdownicon: "h-5 w-5 text-gray-400",
     comboboxoptions: "absolute mt-1 h-[150px] w-full overflow-auto rounded-md bg-white py-1 text-sm shadow-lg md:text-sm z-10",

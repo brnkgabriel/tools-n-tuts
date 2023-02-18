@@ -1,9 +1,10 @@
 <template>
   <div class="h-full">
-    <ComboBox v-if="globalState.categories.length > 0" :list="list" class="mb-2" />
+    <ComboBox v-if="globalState.categories.length > 0" :list="list" class="mb-2 w-full" />
     <div v-if="isLoaded" class="-grid">
       <Tool v-for="(tool, idx) in globalState?.tools" :key="idx" :tool="tool" @click="handleClick(tool)" />
     </div>
+    <ComboBoxSkeleton class="mb-2" />
     <div v-if="!isLoaded" class="-grid">
       <ToolSkeleton v-for="(tool, idx) in skeletonTools" :key="idx" :tool="tool" />
     </div>
