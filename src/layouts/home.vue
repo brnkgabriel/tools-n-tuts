@@ -1,11 +1,12 @@
 <template>
   <div class="h-full w-screen font-body overflow-x-hidden">
     <TopNav class="h-[56px] px-2" />
-    <div class="md:grid md:grid-cols-2 relative content"> 
-      <div aria-label="slides" class="relative w-full overflow-hidden slides h-40% md:h-full">
-        <div aria-label="slide" class="h-full w-full flex items-center justify-center" :style="coverStyle"></div>
+    <div class="sm:grid sm:grid-cols-2 relative content"> 
+      <div aria-label="slides" class="relative w-full overflow-hidden slides sm:flex flex-col">
+        <img :src="globalState.tool.image" alt="background"/>
+        <About :tool="globalState.tool" />
       </div>
-      <div class="p-2 h-60% md:h-full">
+      <div class="p-2 sm:h-full bottom-content">
         <slot></slot>
       </div>
     </div>
@@ -15,29 +16,26 @@
 
 const { globalState } = useGlobals()
 
-const coverStyle = computed(() => obj2Str({
-  "background-image": `url(${globalState.value.background})`,
-  "background-repeat": "no-repeat",
-  "background-position": "center",
-  "background-size": "cover"
-}))
-
-useHead({
-  title: "Tools n Tuts",
-  meta: [
-    { hid: 'og:image', property: 'og:image', content: "https://tools-n-tuts.vercel.app/images/background_1920x1080v3.jpg" },
-    { hid: 'og:title', property: 'og:title', content: "Tools n Tuts" },
-    { hid: 'og:name', property: 'og:name', content: "Tools n Tuts" },
-    { hid: 'og:type', property: 'og:type', content: "website" },
-    { hid: 'og:description', property: 'og:description', content: "The best open source tools and tutorials you need for work" },
-    { hid: 'og:image:type', property: 'og:image:type', content: 'JPEG' },
-    { hid: 'og:url', property: 'og:url', content: "https://tools-n-tuts.vercel.app/" },
-    { hid: 'keywords', name: 'keywords', content: "tools, tuts, productivity, plus, open, source, open source, design, develop, animate, blender, 3D, programming, JavaScript, editing, audio, video, modeling, animation, rendering, applications, apps, tutorials, ui/ux, drawing" }
-  ]
-})
+useHead(head)
 </script>
-<style>
+<style scoped>
+.bottom-content {
+  height: calc(100% - 56.25vw);
+}
 .content {
   height: calc(100% - 56px);
+}
+
+.slides {
+  height: 56.25vw;
+}
+@media screen and (min-width: 640px) {
+  .slides {
+    height: fit-content;
+  }
+
+  .bottom-content {
+    height: 100%;
+  }
 }
 </style>

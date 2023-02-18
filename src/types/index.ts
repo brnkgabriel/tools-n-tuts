@@ -108,6 +108,9 @@ export interface iTool {
   logo: string;
   image: string;
   about: string;
+  intro_video: string;
+  bg_color: string;
+  font_color: string;
 }
 
 export interface iTut {
@@ -119,8 +122,8 @@ export interface iTut {
 }
 
 export interface iGlobal {
+  tool: iTool;
   tools: iTool[];
   tuts: iTut[];
   categories: string[];
-  background: string;
 }

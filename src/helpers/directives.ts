@@ -73,7 +73,7 @@ export const vSelected = {
 
 const loaded = (ele: Element) => {
   const img = ele as HTMLImageElement
-  img.onload = () => (img.parentElement as HTMLElement).classList.add("loaded")
+  img.onload = () => img.classList.add("loaded")
 }
 
 export const vLoaded = {

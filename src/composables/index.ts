@@ -182,9 +182,9 @@ export const useGlobals = () => {
   const setTuts = (tuts: iTut[]) => globalState.value.tuts = tuts
   const setCategories = (categories: string[]) => globalState.value.categories = categories
 
-  const setBackground = (value: string) => globalState.value.background = value
+  const setTool = (value: iTool) => globalState.value.tool = value
 
-  return { setGlobals, globalState, setBackground, setTools, setTuts, setCategories }
+  return { setGlobals, globalState, setTools, setTuts, setCategories, setTool }
 }
 
 export const skeletonTools: iTool[] = num2List(40).map(() => ({
@@ -194,5 +194,22 @@ export const skeletonTools: iTool[] = num2List(40).map(() => ({
   homepage: "",
   image: "",
   logo: "/images/placeholder.svg",
-  name: "loading..."
+  name: "loading...",
+  bg_color: "",
+  font_color: "",
+  intro_video: ""
 }))
+
+export const head = {
+  title: "Tools n Tuts",
+  meta: [
+    { hid: 'og:image', property: 'og:image', content: "https://tools-n-tuts.vercel.app/images/background_1920x1080v3.jpg" },
+    { hid: 'og:title', property: 'og:title', content: "Tools n Tuts" },
+    { hid: 'og:name', property: 'og:name', content: "Tools n Tuts" },
+    { hid: 'og:type', property: 'og:type', content: "website" },
+    { hid: 'og:description', property: 'og:description', content: "The best open source tools and tutorials you need for work" },
+    { hid: 'og:image:type', property: 'og:image:type', content: 'JPEG' },
+    { hid: 'og:url', property: 'og:url', content: "https://tools-n-tuts.vercel.app/" },
+    { hid: 'keywords', name: 'keywords', content: "tools, tuts, productivity, plus, open, source, open source, design, develop, animate, blender, 3D, programming, JavaScript, editing, audio, video, modeling, animation, rendering, applications, apps, tutorials, ui/ux, drawing" }
+  ]
+}

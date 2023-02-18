@@ -25,6 +25,7 @@ declare global {
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
   const h: typeof import('vue')['h']
+  const head: typeof import('../../src/composables/index')['head']
   const imgSrc: typeof import('../../src/composables/index')['imgSrc']
   const inject: typeof import('vue')['inject']
   const isNuxtError: typeof import('../../node_modules/nuxt/dist/app')['isNuxtError']
@@ -149,6 +150,7 @@ declare module 'vue' {
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
+    readonly head: UnwrapRef<typeof import('../../src/composables/index')['head']>
     readonly imgSrc: UnwrapRef<typeof import('../../src/composables/index')['imgSrc']>
     readonly inject: UnwrapRef<typeof import('vue')['inject']>
     readonly isNuxtError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['isNuxtError']>

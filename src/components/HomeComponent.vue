@@ -12,7 +12,7 @@
 <script setup lang="ts">
 import { iComboItem, iGlobal, iTool } from '../types';
 
-const { setTools, setTuts, globalState, setBackground, setCategories } = useGlobals()
+const { setTools, setTuts, globalState, setTool, setCategories } = useGlobals()
 const isLoaded = computed(() => globalState.value.tools.length > 0)
 const list = computed(() => globalState.value.categories.map((name: string) => ({ name })))
 
@@ -28,7 +28,7 @@ watch(data, () => {
   setCategories(globals.categories)
 })
 
-const handleClick = (tool: iTool) => setBackground(tool.image)
+const handleClick = (tool: iTool) => setTool(tool)
 
 onMounted(async () => await refresh() )
 
