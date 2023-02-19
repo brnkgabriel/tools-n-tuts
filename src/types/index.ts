@@ -111,6 +111,7 @@ export interface iTool {
   intro_video: string;
   bg_color: string;
   font_color: string;
+  documentation: string;
 }
 
 export interface iTut {

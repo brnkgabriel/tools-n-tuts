@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center flex justify-center items-center h-full">
+  <div class="text-center flex justify-center items-center">
     <div>
       <div :class="mainline">Kindly partner with us to keep putting out more open source tools and tutorials</div>
       <div class="flex flex-col gap-y-2 justify-center items-center pt-1">

@@ -3,7 +3,7 @@
     <div aria-label="slides" class="relative w-full overflow-hidden slides sm:flex flex-col">
       <img :src="globalState.tool.image" alt="background" />
     </div>
-    <div aria-label="gap" class="h-[116px]">
+    <div aria-label="gap">
       <About :tool="globalState.tool" />
     </div>
   </div>
