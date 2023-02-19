@@ -9,8 +9,8 @@ const tool: iTool = {
   image: "/images/background_1920x1080v3.jpg",
   logo: "/images/background_1920x1080v3.jpg",
   name: "loading...",
-  bg_color: "",
-  font_color: "",
+  bg_color: "#0B5CFF",
+  font_color: "#fff",
   intro_video: ""
 }
 

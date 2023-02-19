@@ -1,24 +1,53 @@
 <template>
-  <div class="absolute about">
-    <h1>{{ tool.about }}</h1>
+  <div class="about p-2">
+    <h1 class="txt mb-1">{{ globalState.tool.about }}</h1>
+    <div aria-label="buttons" class="buttons grid gap-2 grid-cols-2 lg:grid-cols-4">
+      <a href="http://" class="p-2 rounded flex justify-start gap-1 items-center" target="_blank" :style="style">
+        <Homepage />
+        <span>Homepage</span>
+      </a>
+      <a href="http://" class="p-2 rounded flex justify-start gap-1 items-center" target="_blank" :style="style">
+        <Documentation />
+        <span>Documentation</span>
+      </a>
+      <a href="http://" class="p-2 rounded flex justify-start gap-1 items-center" target="_blank" :style="style">
+        <Download />
+        <span>Download</span>
+      </a>
+      <a href="http://" class="p-2 rounded flex justify-start gap-1 items-center" target="_blank" :style="style">
+        <Tutorials />
+        <span>Tutorials</span>
+      </a>
+    </div>
   </div>
 </template>
 <script setup lang="ts">
-import { iTool } from '../types';
+import Documentation from './icons/Documentation.vue';
+import Download from './icons/Download.vue';
+import Homepage from './icons/Homepage.vue';
+import Tutorials from './icons/Tutorials.vue';
 
-const props = defineProps<{
-  tool: iTool
-}>()
+
+const { globalState } = useGlobals()
+
+const style = computed(() => ({
+  "background-color": globalState.value.tool.bg_color,
+  "color": globalState.value.tool.font_color
+}))
 </script>
 <style scoped>
 .about {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 8px;
-  font-size: 14px;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  font-size: 12px;
   width: 100%;
+}
+
+.about .txt {
+  white-space: initial;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  height: 36px;
 }
 </style>

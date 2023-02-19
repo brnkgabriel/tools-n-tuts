@@ -15,6 +15,8 @@
 </template>
 <script setup lang="ts">
 
+import Donate from './icons/Donate.vue';
+
 const {
   topnavwrap,
   topnavlogo,

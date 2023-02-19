@@ -13,7 +13,7 @@ const flex_center = "flex flex-col justify-center items-center"
 const btn = "rounded-full shadow-custom py-2 px-4 text-center cursor-pointer text-rcnblue-500 border-2 text-xs flex justify-center items-center gap-x-2"
 export const useUi = () => {
   return {
-    btmnavwrap: "grid gap-x-2 bg-white z-10 w-full max-w-md",
+    btmnavwrap: "grid gap-x-2 bg-white z-10 w-full",
     comboinputwrap: "relative w-full sm:w-fit cursor-default overflow-hidden rounded-lg bg-white text-left shadow-md md:text-sm",
     combobutton: "absolute inset-y-0 right-0 flex items-center pr-2",
     chevronupdownicon: "h-5 w-5 text-gray-400",
