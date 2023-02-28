@@ -11,7 +11,8 @@ const tool: iTool = {
   name: "loading...",
   bg_color: "#0B5CFF",
   font_color: "#fff",
-  intro_video: ""
+  intro_video: "",
+  documentation: ""
 }
 
 export default defineNuxtPlugin(nuxtApp => {

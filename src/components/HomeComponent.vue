@@ -1,12 +1,24 @@
 <template>
-  <div class="h-full bottom-content flex flex-col gap-y-2 sm:p-2">
-    <ComboBox v-if="globalState.categories.length > 0" :list="list" class="w-full" />
-    <div v-if="isLoaded" class="-grid">
-      <Tool v-for="(tool, idx) in globalState?.tools" :key="idx" :tool="tool" @click="handleClick(tool)" />
+  <div class="thumbnailpane relative">
+    <div v-if="isLoaded" class="search flex justify-start items-center px-2 md:pl-0">
+      <div class="search-btn absolute" :class="btn">
+        <div class="search-btn-clickable absolute" data-type="search-btn"></div>
+        <div class="search-icon"></div>
+        <div aria-label="spinloader" class="spin-loader"></div>
+      </div>
+      <input type="text" name="search" autocomplete="off"
+        class="pr-[40px] rounded-lg h-[36px] w-full search outline-mainblue-500 bg-white border border-gray-300 text-gray-900 text-sm focus:ring-rcnblue-500 focus:border-rcnblue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-rcnblue-500 dark:focus:border-rcnblue-500"
+        placeholder="Search for tool" />
     </div>
-    <ComboBoxSkeleton v-if="!isLoaded" />
-    <div v-if="!isLoaded" class="-grid">
-      <ToolSkeleton v-for="(tool, idx) in skeletonTools" :key="idx" :tool="tool" />
+    <div v-if="isLoaded" class="-tpane thumbnails -front">
+      <Tool class="thumb" v-for="(tool, idx) in globalState?.tools" :key="idx" :tool="tool" @click="handleClick(tool)" />
+    </div>
+    <div aria-label="tuts" class="-tpane w-full h-full bg-mainorange-500 -back">
+      tutorials
+    </div>
+    <ComboBoxSkeleton v-if="!isLoaded" class="search flex items-center" />
+    <div v-if="!isLoaded" class="thumbnails">
+      <ToolSkeleton class="thumb" v-for="(tool, idx) in skeletonTools" :key="idx" :tool="tool" />
     </div>
   </div>
 </template>
@@ -14,6 +26,7 @@
 import { iGlobal, iTool } from '../types';
 
 const { setTools, setTuts, globalState, setTool, setCategories } = useGlobals()
+const { input, btn } = useUi()
 const isLoaded = computed(() => globalState.value.tools.length > 0)
 const list = computed(() => globalState.value.categories.map((name: string) => ({ name })))
 
@@ -29,22 +42,11 @@ watch(data, () => {
   setCategories(globals.categories)
 })
 
-const handleClick = (tool: iTool) => setTool(tool)
+const handleClick = (tool: iTool) => {
+  console.log("tool is", tool)
+  setTool(tool)
+}
 
 onMounted(async () => await refresh())
 
 </script>
-<style scoped>
-.-grid {
-  height: calc(100% - 36px);
-}
-.bottom-content {
-  height: calc(100% - 56.25vw - 132px);
-}
-
-@media screen and (min-width: 640px) {
-  .bottom-content {
-    height: 100%;
-  }
-}
-</style>

@@ -10,11 +10,11 @@ const flexCenterCenter = "flex justify-center items-center"
 const mainline = "text-rcnblue-500 font-semibold text-sm"
 const center = "absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
 const flex_center = "flex flex-col justify-center items-center"
-const btn = "rounded-full shadow-custom py-2 px-4 text-center cursor-pointer text-rcnblue-500 border-2 text-xs flex justify-center items-center gap-x-2"
+const btn = "rounded-full shadow-custom py-2 px-4 text-center cursor-pointer text-rcnblue-500 text-xs flex justify-center items-center gap-x-2"
 export const useUi = () => {
   return {
     btmnavwrap: "grid gap-x-2 bg-white z-10 w-full",
-    comboinputwrap: "relative w-full sm:w-fit cursor-default overflow-hidden rounded-lg bg-white text-left shadow-md md:text-sm",
+    comboinputwrap: "relative w-full sm:w-fit cursor-default overflow-hidden rounded-md bg-white text-left shadow-md md:text-sm h-[36px]",
     combobutton: "absolute inset-y-0 right-0 flex items-center pr-2",
     chevronupdownicon: "h-5 w-5 text-gray-400",
     comboboxoptions: "absolute mt-1 h-[150px] w-full overflow-auto rounded-md bg-white py-1 text-sm shadow-lg md:text-sm z-10",
@@ -197,7 +197,8 @@ export const skeletonTools: iTool[] = num2List(40).map(() => ({
   name: "loading...",
   bg_color: "",
   font_color: "",
-  intro_video: ""
+  intro_video: "",
+  documentation: ""
 }))
 
 export const head = {
