@@ -280,8 +280,29 @@ body {
 /* ======================== phone devices ========================== */
 @media screen and (orientation: portrait) {
   .gridcontent {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 56px calc((100% - 136px) / 2) calc((100% - 136px) / 2) 56px
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 56px calc((100% - 136px) / 2) calc((100% - 136px) / 2) 56px */
+    display: block;
+  }
+
+  .topnav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+
+  .bottomnav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .thumbnailpane {
+    height: 245px;
   }
 
   .video {
@@ -295,6 +316,7 @@ body {
 /* ======================== tab & desktop landscape ========================== */
 
 @media screen and (orientation: landscape) {
+
   .gridcontent {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 56px calc(100% - 64px)
@@ -321,8 +343,6 @@ body {
 }
 
 @media screen and (max-height: 567px) and (orientation: landscape) {
-
-  /* phone landscape */
   .gridcontent {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 48px calc(100% - 64px)
