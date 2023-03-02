@@ -3,7 +3,7 @@
     <TopNav class="topnav" />
     <VideopaneComponent />
     <slot></slot>
-    <div class="cell bottomnav">bottom nav</div>
+    <BottomNav />
   </div>
 </template>
 <script setup lang="ts">

@@ -1,15 +1,32 @@
 <template>
-  <div aria-label="btmnavwrap" :class="btmnavwrap">
-  
+  <div class="cell bottomnav">
+    <div class="nav">
+      <AiTools />
+      <div class="tabname text-xxs">Ai Tools</div>
+    </div>
+    <div class="nav">
+      <Animation />
+      <div class="tabname text-xxs">Animation</div>
+    </div>
   </div>
 </template>
 <script setup lang="ts">
-
-
-// data / var
-const { btmnavwrap, subline_small, bottomNavLink, bottomNavLinkIcon } = useUi()
+import AiTools from './tabs/AiTools.vue';
+import Animation from './tabs/Animation.vue';
 
 </script>
-<style lang="">
-    
+<style scoped>
+  .bottomnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
 </style>
