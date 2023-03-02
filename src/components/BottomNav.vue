@@ -2,11 +2,11 @@
   <div class="cell bottomnav">
     <div class="nav">
       <AiTools />
-      <div class="tabname text-xxs">Ai Tools</div>
+      <div class="tabname text-xxs font-semibold">Ai Tools</div>
     </div>
     <div class="nav">
       <Animation />
-      <div class="tabname text-xxs">Animation</div>
+      <div class="tabname text-xxs font-semibold">Animation</div>
     </div>
   </div>
 </template>
@@ -28,5 +28,6 @@ import Animation from './tabs/Animation.vue';
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    padding: 0 8px;
   }
 </style>
