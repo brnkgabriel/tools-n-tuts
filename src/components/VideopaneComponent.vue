@@ -5,21 +5,21 @@
       <NuxtImg :src="globalState.tool.image" />
     </div>
     <div class="links">
-      <div class="link">
-        <Homepage class="link-icn" />
+      <div class="link" :style="style">
         <div class="link-txt">homepage</div>
+        <Homepage class="link-icn" />
       </div>
-      <div class="link">
-        <Download class="link-icn" />
+      <div class="link" :style="style">
         <div class="link-txt">download</div>
+        <Download class="link-icn" />
       </div>
-      <div class="link">
-        <Documentation class="link-icn" />
+      <div class="link" :style="style">
         <div class="link-txt">documentation</div>
+        <Documentation class="link-icn" />
       </div>
-      <div class="link">
-        <Tutorials class="link-icn" />
+      <div class="link" :style="style">
         <div class="link-txt">tools</div>
+        <Tutorials class="link-icn" />
       </div>
     </div>
   </div>
@@ -32,6 +32,8 @@ import Tutorials from './icons/Tutorials.vue';
 
 
 const { globalState } = useGlobals()
+
+const style = computed(() => `background-color:${globalState.value.tool.bg_color}`)
 
 const isImage = computed(() => globalState.value.tool.intro_video === "")
 </script>

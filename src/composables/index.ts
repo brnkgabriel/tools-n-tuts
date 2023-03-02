@@ -179,12 +179,13 @@ export const useGlobals = () => {
   }
 
   const setTools = (tools: iTool[]) => globalState.value.tools = tools
+  const setSelectedTools = (tools: iTool[]) => globalState.value.selectedTools = tools
   const setTuts = (tuts: iTut[]) => globalState.value.tuts = tuts
   const setCategories = (categories: string[]) => globalState.value.categories = categories
 
   const setTool = (value: iTool) => globalState.value.tool = value
 
-  return { setGlobals, globalState, setTools, setTuts, setCategories, setTool }
+  return { setGlobals, globalState, setTools, setTuts, setCategories, setTool, setSelectedTools }
 }
 
 export const skeletonTools: iTool[] = num2List(40).map(() => ({

@@ -265,13 +265,14 @@ body {
   position: relative;
   text-align: center;
   cursor: pointer;
+  display: flex;
+  column-gap: 4px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .link-icn {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
+  
 }
 
 /* ======================== end video & preview ========================== */
@@ -299,6 +300,10 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    width: 100%;
+    height: 56px;
+    background-color: white;
+    z-index: 1;
   }
 
   .thumbnailpane {
@@ -309,6 +314,10 @@ body {
     position: relative;
     width: 100%;
     aspect-ratio: 1920 / 1080;
+  }
+
+  .thumbnails {
+    padding-bottom: 16px;
   }
 }
 /* ======================== end phone devices ========================== */

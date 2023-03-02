@@ -20,7 +20,8 @@ export default defineNuxtPlugin(nuxtApp => {
   useState<iGlobal>(constants.globals, () => ({
     tool,
     tools: [],
+    selectedTools: [],
     tuts: [],
-    categories: []
+    categories: [],
   }))
 })
