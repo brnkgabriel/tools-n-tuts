@@ -212,7 +212,8 @@ export const head = {
     { hid: 'og:description', property: 'og:description', content: "The best open source tools and tutorials you need for work" },
     { hid: 'og:image:type', property: 'og:image:type', content: 'JPEG' },
     { hid: 'og:url', property: 'og:url', content: "https://tools-n-tuts.vercel.app/" },
-    { hid: 'keywords', name: 'keywords', content: "tools, tuts, productivity, plus, open, source, open source, design, develop, animate, blender, 3D, programming, JavaScript, editing, audio, video, modeling, animation, rendering, applications, apps, tutorials, ui/ux, drawing" }
+    { hid: 'keywords', name: 'keywords', content: "tools, tuts, productivity, plus, open, source, open source, design, develop, animate, blender, 3D, programming, JavaScript, editing, audio, video, modeling, animation, rendering, applications, apps, tutorials, ui/ux, drawing" },
+    { hid: 'google-site-verification', name: 'google-site-verification', content: "w04df0jczUYBXM5xDEK_EI4EE8RQ2JHa35WQQOQ-FSo" }
   ]
 }
 
