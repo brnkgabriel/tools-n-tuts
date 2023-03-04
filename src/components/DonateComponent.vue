@@ -11,7 +11,7 @@
           class="bg-paystack-500 font-body text-white w-1/2">
           Paystack (&#8358;)
         </NuxtLink>
-        <NuxtLink href="/" target="_blank" :class="btn" class="font-body w-1/2" :style="style">
+        <NuxtLink href="/" :class="btn" class="font-body w-1/2" :style="style">
           Home
         </NuxtLink>
       </div>
