@@ -18,7 +18,7 @@
         <Download class="link-icn" />
       </a>
       <div v-if="!isHome" class="link" :style="style">
-        <div class="link-txt">tools</div>
+        <div class="link-txt">Tutorials</div>
         <Tutorials class="link-icn" />
       </div>
     </div>
