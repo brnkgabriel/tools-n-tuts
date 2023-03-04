@@ -5,7 +5,7 @@
         class="pr-[40px] rounded-lg h-[36px] w-full search outline-mainblue-500 bg-white border border-gray-300 text-gray-900 text-sm focus:ring-rcnblue-500 focus:border-rcnblue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-rcnblue-500 dark:focus:border-rcnblue-500"
         placeholder="Search for tool" v-model="searchTerm" />
     </div>
-    <div v-if="isLoaded" class="-tpane thumbnails -front">
+    <div v-if="isLoaded" class="-tpane thumbnails">
       <Tool class="thumb" v-for="(tool, idx) in globalState?.selectedTools" :key="idx" :tool="tool" @click="handleClick(tool)" />
     </div>
     <ComboBoxSkeleton v-if="!isLoaded" class="search flex items-center" />
