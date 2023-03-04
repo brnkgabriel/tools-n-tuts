@@ -112,6 +112,7 @@ export interface iTool {
   bg_color: string;
   font_color: string;
   documentation: string;
+  type?: "home" | "tool"
 }
 
 export interface iTut {

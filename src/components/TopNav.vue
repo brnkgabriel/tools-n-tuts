@@ -1,6 +1,6 @@
 <template>
   <div :class="topnavwrap">
-    <NuxtLink href="/" class="flex justify-center items-center gap-x-1">
+    <NuxtLink href="/" class="flex justify-center items-center gap-x-1" @click="setDefaultTool">
       <img :class="topnavlogo" src="/icons/logo.svg" alt="logo" />
       <div class="font-medium text-sm leading-4">
         <h1 class="font-semibold">Tools n Tuts</h1>
@@ -23,8 +23,10 @@ const {
   btn
 } = useUi()
 
-const { globalState } = useGlobals()
+const { globalState, setTool } = useGlobals()
 const style = computed(() => `background-color:${globalState.value.tool.bg_color};color:white`)
+
+const setDefaultTool = () => setTool(defaultTool)
 
 const props = defineProps<{
   avatar?: string

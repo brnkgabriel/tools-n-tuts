@@ -1,24 +1,10 @@
 import { iGlobal, iTool } from "~~/src/types"
-import { constants } from "../composables"
-
-const tool: iTool = {
-  about: "The best open source tools and tutorials you need for work",
-  category: "",
-  download_page: "",
-  homepage: "",
-  image: "/images/background_1920x1080v3.jpg",
-  logo: "/images/background_1920x1080v3.jpg",
-  name: "loading...",
-  bg_color: "#0B5CFF",
-  font_color: "#fff",
-  intro_video: "",
-  documentation: ""
-}
+import { constants, defaultTool } from "../composables"
 
 export default defineNuxtPlugin(nuxtApp => {
   // Doing something with nuxtApp
   useState<iGlobal>(constants.globals, () => ({
-    tool,
+    tool: defaultTool,
     tools: [],
     selectedTools: [],
     tuts: [],

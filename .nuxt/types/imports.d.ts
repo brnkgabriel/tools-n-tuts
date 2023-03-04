@@ -11,6 +11,7 @@ declare global {
   const constants: typeof import('../../src/composables/index')['constants']
   const createError: typeof import('../../node_modules/nuxt/dist/app')['createError']
   const customRef: typeof import('vue')['customRef']
+  const defaultTool: typeof import('../../src/composables/index')['defaultTool']
   const defineAppConfig: typeof import('../../node_modules/nuxt/dist/app')['defineAppConfig']
   const defineAsyncComponent: typeof import('vue')['defineAsyncComponent']
   const defineComponent: typeof import('vue')['defineComponent']
@@ -136,6 +137,7 @@ declare module 'vue' {
     readonly constants: UnwrapRef<typeof import('../../src/composables/index')['constants']>
     readonly createError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['createError']>
     readonly customRef: UnwrapRef<typeof import('vue')['customRef']>
+    readonly defaultTool: UnwrapRef<typeof import('../../src/composables/index')['defaultTool']>
     readonly defineAppConfig: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['defineAppConfig']>
     readonly defineAsyncComponent: UnwrapRef<typeof import('vue')['defineAsyncComponent']>
     readonly defineComponent: UnwrapRef<typeof import('vue')['defineComponent']>

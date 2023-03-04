@@ -215,3 +215,18 @@ export const head = {
     { hid: 'keywords', name: 'keywords', content: "tools, tuts, productivity, plus, open, source, open source, design, develop, animate, blender, 3D, programming, JavaScript, editing, audio, video, modeling, animation, rendering, applications, apps, tutorials, ui/ux, drawing" }
   ]
 }
+
+export const defaultTool: iTool = {
+  about: "The best open source tools and tutorials you need for work",
+  category: "",
+  download_page: "",
+  homepage: "/",
+  image: "/images/background_1920x1080v3.jpg",
+  logo: "/images/background_1920x1080v3.jpg",
+  name: "loading...",
+  bg_color: "#0B5CFF",
+  font_color: "#fff",
+  intro_video: "",
+  documentation: "/about",
+  type: "home"
+}
