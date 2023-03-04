@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col gap-y-2 text-xs p-2 thumbnailpane overflow-y-auto">
-    <h1 class="text-lg font-semibold text-center">About Tools & Tuts</h1>
-    <div>
+    <h1 class="text-lg font-semibold flex justify-center items-center">About Tools & Tuts</h1>
+    <div class="flex flex-col gap-y-4">
       <p>Welcome to Tools n Tuts, your go-to destination for open source tools and tutorials that cater to your various needs. We understand that relying on proprietary tools can become an issue when they adjust their pricing model, which is why we have created a platform that offers free and accessible alternatives.</p>
 
       <p>Our website features a comprehensive list of open source tools that are categorized into six different categories, namely Audio & Video, Coding, Graphics, Animation, Utility, and Artificial Intelligence. Whether you are an audiovisual enthusiast, a software developer, or a graphic designer, we have a range of tools that can cater to your needs.</p>
