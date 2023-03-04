@@ -2,7 +2,7 @@
   <div class="cell videopane">
     <div class="cell video">
       <iframe v-if="!isImage" :src="globalState.tool.intro_video" class="iframe"></iframe>
-      <NuxtImg :src="globalState.tool.image" />
+      <img v-if="isImage" :src="globalState.tool.image" />
     </div>
     <div class="links">
       <a class="link" :href="globalState.tool.homepage" target="_blank" :style="style">
