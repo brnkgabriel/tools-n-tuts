@@ -6,7 +6,7 @@
     </div>
     <div class="links">
       <NuxtLink class="link" :href="globalState.tool.homepage" :target="target(globalState.tool)" :style="style">
-        <div class="link-txt">homepage</div>
+        <div class="link-txt">{{ home(globalState.tool) }}</div>
         <Homepage class="link-icn" />
       </NuxtLink>
       <NuxtLink class="link" :href="aHref(globalState.tool)" :target="target(globalState.tool)" :style="style">
@@ -53,5 +53,10 @@ const target = (tool: iTool) => {
 const text = (tool: iTool) => {
   const isHome = tool.type === "home"
   return isHome ? "about" : "documentation"
+}
+
+const home = (tool: iTool) => {
+  const isHome = tool.type === "home"
+  return isHome ? "Home" : "Tool Home"
 }
 </script>
