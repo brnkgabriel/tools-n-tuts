@@ -8,7 +8,7 @@
       </div>
     </NuxtLink>
 
-    <NuxtLink href="/donate" :class="btn" class="text-white bg-mainblue-500">
+    <NuxtLink href="/donate" :class="btn" :style="style">
       <Donate />
     </NuxtLink>
   </div>
@@ -23,6 +23,8 @@ const {
   btn
 } = useUi()
 
+const { globalState } = useGlobals()
+const style = computed(() => `background-color:${globalState.value.tool.bg_color};color:white`)
 
 const props = defineProps<{
   avatar?: string
