@@ -103,6 +103,12 @@ body {
 .topnav {
   padding: 0 8px;
 }
+
+.tabname {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 /* ======================== end top & bottom navigations ========================== */
 
 /* ======================== search icon ========================== */
@@ -304,6 +310,8 @@ body {
     height: 56px;
     background-color: white;
     z-index: 5;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 
   .thumbnailpane {
