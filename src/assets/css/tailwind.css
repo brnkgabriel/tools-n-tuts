@@ -303,7 +303,7 @@ body {
     width: 100%;
     height: 56px;
     background-color: white;
-    z-index: 1;
+    z-index: 5;
   }
 
   .thumbnailpane {
@@ -347,7 +347,7 @@ body {
   }
 
   .bottomnav {
-    display: none;
+    display: none !important;
   }
 }
 

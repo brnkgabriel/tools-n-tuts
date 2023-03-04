@@ -5,18 +5,18 @@
       <NuxtImg :src="globalState.tool.image" />
     </div>
     <div class="links">
-      <div class="link" :style="style">
+      <a class="link" :href="globalState.tool.homepage" target="_blank" :style="style">
         <div class="link-txt">homepage</div>
         <Homepage class="link-icn" />
-      </div>
-      <div class="link" :style="style">
+      </a>
+      <a class="link" :href="globalState.tool.download_page" target="_blank" :style="style">
         <div class="link-txt">download</div>
         <Download class="link-icn" />
-      </div>
-      <div class="link" :style="style">
+      </a>
+      <a class="link" :href="globalState.tool.documentation" target="_blank" :style="style">
         <div class="link-txt">documentation</div>
         <Documentation class="link-icn" />
-      </div>
+      </a>
       <div class="link" :style="style">
         <div class="link-txt">tools</div>
         <Tutorials class="link-icn" />
