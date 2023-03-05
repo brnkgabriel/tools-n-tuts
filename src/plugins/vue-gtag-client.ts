@@ -4,7 +4,7 @@ export default defineNuxtPlugin(nuxtApp => {
   // Doing something with nuxtApp
   nuxtApp.vueApp.use(VueGtag, {
     property: {
-      id: 'G-NJ0CLFKTRB'
+      id: "G-R6G45G34LW"
     }
   })
 })
