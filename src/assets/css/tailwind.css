@@ -96,7 +96,8 @@ body {
 
 /* ======================== top & bottom navigations ========================== */
 .topnav,
-.bottomnav {
+.bottomnav,
+.footer {
   grid-column: 1 / 3;
 }
 

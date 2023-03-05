@@ -1,26 +1,5 @@
 <template>
-  <div class="cell bottomnav">
-    <!-- <div class="nav">
-      <AiTools />
-      <div class="tabname text-xxs font-semibold">Ai Tools</div>
-    </div>
-    <div class="nav">
-      <Animation />
-      <div class="tabname text-xxs font-semibold">Animation</div>
-    </div>
-    <div class="nav">
-      <AudioVideo />
-      <div class="tabname text-xxs font-semibold">Audio & Video</div>
-    </div>
-    <div class="nav">
-      <Graphics />
-      <div class="tabname text-xxs font-semibold">Graphics</div>
-    </div>
-    <div class="nav">
-      <Utilities />
-      <div class="tabname text-xxs font-semibold">Utilities</div>
-    </div> -->
-    
+  <div class="cell bottomnav">    
     <div class="nav" v-for="(cat, idx) in globalState.categories" :key="idx" @click="selectTools(cat)">
       <component :is="comp(cat)"></component>
       <div class="tabname text-xxs font-semibold">{{cat}}</div>
@@ -37,6 +16,10 @@ import Coding from './tabs/Coding.vue'
 import { iTool } from '../types';
 
 const { globalState, setSelectedTools } = useGlobals()
+
+const route = useRoute()
+
+watch(route, () => console.log("from bottom nav, route is", route.path))
 
 watch(globalState, () => console.log("categories are", globalState.value.categories))
 
