@@ -32,6 +32,7 @@ const comp = (category: string) => {
 
 const selectTools = (category: string) => {
   const query = category === "Home" ? "" : category
+  setSelectedTools(defaultTool)
   const selectedTools = globalState.value.tools.filter((tool: iTool) => tool.category.indexOf(query) !== -1)
   setSelectedTools(selectedTools)
 }
