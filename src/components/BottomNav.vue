@@ -16,7 +16,7 @@ import Coding from './tabs/Coding.vue'
 import Home from './tabs/Home.vue';
 import { iTool } from '../types';
 
-const { globalState, setSelectedTools } = useGlobals()
+const { globalState, setSelectedTools, setTool } = useGlobals()
 
 const comp = (category: string) => {
   switch (category) {
@@ -32,7 +32,7 @@ const comp = (category: string) => {
 
 const selectTools = (category: string) => {
   const query = category === "Home" ? "" : category
-  setSelectedTools(defaultTool)
+  setTool(defaultTool)
   const selectedTools = globalState.value.tools.filter((tool: iTool) => tool.category.indexOf(query) !== -1)
   setSelectedTools(selectedTools)
 }
