@@ -31,6 +31,7 @@
     "base64-arraybuffer": "^1.0.2",
     "got": "^12.5.3",
     "pinia": "^2.0.28",
+    "vue-gtag-next": "^1.14.0",
     "vue-picture-cropper": "^0.6.0"
   }
 }

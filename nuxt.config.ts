@@ -18,7 +18,7 @@ export default {
     '@kevinmarrec/nuxt-pwa',
     '@pinia/nuxt',
     '@nuxt/image-edge',
-    '@nuxtjs/supabase'
+    '@nuxtjs/supabase',
   ],
   pwa: {
     workbox: {
