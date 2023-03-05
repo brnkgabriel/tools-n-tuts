@@ -41,6 +41,8 @@ const { data, refresh } = await useLazyFetch(() => constants.toolsnTutsApi, { pa
 watch(data, () => {
   const globals: iGlobal = data.value as iGlobal
 
+  console.log("from home component, categories are", globals.categories)
+
   setTools(globals.tools)
   setSelectedTools(globals.tools)
   setTuts(globals.tuts)

@@ -1,5 +1,5 @@
 <template>
-  <div class="cell bottomnav">    
+  <div class="cell bottomnav">
     <div class="nav" v-for="(cat, idx) in globalState.categories" :key="idx" @click="selectTools(cat)">
       <component :is="comp(cat)"></component>
       <div class="tabname text-xxs font-semibold">{{cat}}</div>
@@ -13,15 +13,12 @@ import AudioVideo from './tabs/AudioVideo.vue';
 import Graphics from './tabs/Graphics.vue';
 import Utilities from './tabs/Utilities.vue';
 import Coding from './tabs/Coding.vue'
+import Home from './tabs/Home.vue';
 import { iTool } from '../types';
 
 const { globalState, setSelectedTools } = useGlobals()
 
-const route = useRoute()
-
-watch(route, () => console.log("from bottom nav, route is", route.path))
-
-watch(globalState, () => console.log("categories are", globalState.value.categories))
+console.log("categories", globalState.value.categories)
 
 const comp = (category: string) => {
   switch (category) {
@@ -31,11 +28,13 @@ const comp = (category: string) => {
     case "Graphics": return Graphics
     case "Utility": return Utilities
     case "AI Tools": return AiTools
+    case "Home": return Home
   }
 }
 
 const selectTools = (category: string) => {
-  const selectedTools = globalState.value.tools.filter((tool: iTool) => tool.category === category)
+  const query = category === "Home" ? "" : category
+  const selectedTools = globalState.value.tools.filter((tool: iTool) => tool.category.indexOf(query) !== -1)
   setSelectedTools(selectedTools)
   console.log("clicking selected tools")
 }
@@ -44,7 +43,7 @@ const selectTools = (category: string) => {
 <style>
   .bottomnav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     column-gap: 8px;
   }

@@ -6,17 +6,17 @@
     </div>
     <div class="links">
       <NuxtLink class="link" :href="globalState.tool.homepage" :target="target(globalState.tool)" :style="style">
-        <div class="link-txt">{{ home(globalState.tool) }}</div>
+        <div class="link-txt">{{ homeTxt(globalState.tool) }}</div>
         <Homepage class="link-icn" />
       </NuxtLink>
-      <NuxtLink class="link" :href="aHref(globalState.tool)" :target="target(globalState.tool)" :style="style">
-        <div class="link-txt">{{ text(globalState.tool) }}</div>
+      <NuxtLink class="link" :href="aboutHref(globalState.tool)" :target="target(globalState.tool)" :style="style">
+        <div class="link-txt">{{ aboutTxt(globalState.tool) }}</div>
         <Documentation class="link-icn" />
       </NuxtLink>
-      <a v-if="!isHome" class="link" :href="globalState.tool.download_page" target="_blank" :style="style">
-        <div class="link-txt">download</div>
-        <Download class="link-icn" />
-      </a>
+      <NuxtLink class="link" :href="privacyHref(globalState.tool)" :target="target(globalState.tool)" :style="style">
+        <div class="link-txt">{{ privacyTxt(globalState.tool) }}</div> 
+        <component :is="privacyIcon(globalState.tool)"></component>
+      </NuxtLink>
       <div v-if="!isHome" class="link" :style="style">
         <div class="link-txt">Tutorials</div>
         <Tutorials class="link-icn" />
@@ -40,9 +40,13 @@ const isHome = computed(() => globalState.value.tool.type === "home")
 const isImage = computed(() => globalState.value.tool.intro_video === "")
 
 
-const aHref = (tool: iTool) => {
+const aboutHref = (tool: iTool) => {
   const isHome = tool.type === "home"
   return isHome ? '/about' : tool.documentation 
+}
+const privacyHref = (tool: iTool) => {
+  const isHome = tool.type === "home"
+  return isHome ? '/privacy' : tool.download_page 
 }
 
 const target = (tool: iTool) => {
@@ -50,13 +54,23 @@ const target = (tool: iTool) => {
   return isHome ? '_self' : "_blank"
 }
 
-const text = (tool: iTool) => {
+const aboutTxt = (tool: iTool) => {
   const isHome = tool.type === "home"
   return isHome ? "about" : "documentation"
 }
 
-const home = (tool: iTool) => {
+const homeTxt = (tool: iTool) => {
   const isHome = tool.type === "home"
   return isHome ? "Home" : "Tool Home"
+}
+
+const privacyTxt = (tool: iTool) => {
+  const isHome = tool.type === "home"
+  return isHome ? "Privacy Policy" : "download"
+}
+
+const privacyIcon = (tool: iTool) => {
+  const isHome = tool.type === "home"
+  return isHome ? Documentation : Download
 }
 </script>
