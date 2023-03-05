@@ -6,7 +6,7 @@
         placeholder="Search for tool" v-model="searchTerm" />
     </div>
     <div v-if="isLoaded" class="-tpane thumbnails">
-      <Tool class="thumb" v-for="(tool, idx) in globalState?.selectedTools" :key="idx" :tool="tool" @click="handleClick(tool)" />
+      <Tool class="thumb" v-for="(tool, idx) in globalState?.selectedTools" :key="idx" :tool="tool" @click="setTool(tool)" />
     </div>
     <ComboBoxSkeleton v-if="!isLoaded" class="search flex items-center" />
     <div v-if="!isLoaded" class="thumbnails">
@@ -41,22 +41,11 @@ const { data, refresh } = await useLazyFetch(() => constants.toolsnTutsApi, { pa
 watch(data, () => {
   const globals: iGlobal = data.value as iGlobal
 
-  console.log("from home component, categories are", globals.categories)
-
   setTools(globals.tools)
   setSelectedTools(globals.tools)
   setTuts(globals.tuts)
   setCategories(globals.categories)
 })
-
-const handleClick = (tool: iTool) => {
-  console.log("tool is", tool)
-  setTool(tool)
-}
-
-const handleSearch = () => {
-  console.log("searchTerm is", searchTerm.value)
-}
 
 onMounted(async () => await refresh())
 

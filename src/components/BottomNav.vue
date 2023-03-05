@@ -18,8 +18,6 @@ import { iTool } from '../types';
 
 const { globalState, setSelectedTools } = useGlobals()
 
-console.log("categories", globalState.value.categories)
-
 const comp = (category: string) => {
   switch (category) {
     case "Animation": return Animation
@@ -36,7 +34,6 @@ const selectTools = (category: string) => {
   const query = category === "Home" ? "" : category
   const selectedTools = globalState.value.tools.filter((tool: iTool) => tool.category.indexOf(query) !== -1)
   setSelectedTools(selectedTools)
-  console.log("clicking selected tools")
 }
 
 </script>
