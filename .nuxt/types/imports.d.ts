@@ -25,6 +25,7 @@ declare global {
   const el: typeof import('../../src/composables/index')['el']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
+  const getMachineId: typeof import('../../src/composables/index')['getMachineId']
   const h: typeof import('vue')['h']
   const head: typeof import('../../src/composables/index')['head']
   const imgSrc: typeof import('../../src/composables/index')['imgSrc']
@@ -151,6 +152,7 @@ declare module 'vue' {
     readonly el: UnwrapRef<typeof import('../../src/composables/index')['el']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
+    readonly getMachineId: UnwrapRef<typeof import('../../src/composables/index')['getMachineId']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
     readonly head: UnwrapRef<typeof import('../../src/composables/index')['head']>
     readonly imgSrc: UnwrapRef<typeof import('../../src/composables/index')['imgSrc']>

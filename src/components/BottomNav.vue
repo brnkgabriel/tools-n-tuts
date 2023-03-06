@@ -37,20 +37,4 @@ const selectTools = (category: string) => {
   setSelectedTools(selectedTools)
 }
 
-</script>
-<style>
-  .bottomnav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 8px;
-  }
-
-  .nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    padding: 0 8px;
-  }
-</style>
+</script> 
