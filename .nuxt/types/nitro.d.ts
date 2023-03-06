@@ -6,6 +6,7 @@ declare module 'nitropack' {
     '/api/g-data': Awaited<ReturnType<typeof import('../../src/server/api/g-data.get').default>>
     '/__nuxt_error': Awaited<ReturnType<typeof import('../../node_modules/nuxt/dist/core/runtime/nitro/renderer').default>>
     '/manifest.json': Awaited<ReturnType<typeof import('../../node_modules/@kevinmarrec/nuxt-pwa/dist/runtime/server/manifest').default>>
+    '/_ipx/**': Awaited<ReturnType<typeof import('../../node_modules/@nuxt/image-edge/dist/runtime/ipx').default>>
     '/api/_supabase/session': Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/server/api/session').default>>
   }
 }
