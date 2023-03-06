@@ -28,7 +28,7 @@ const style = computed(() => `background-color:${globalState.value.tool.bg_color
 
 const trackDonate = (label: string) => {
   event('donate_event', {
-    'event_category': "donate button click",
+    'event_category': "donate_button_click",
     'event_label': label,
     'value': 1
   })

@@ -34,7 +34,7 @@ const setDefaultTool = () => setTool(defaultTool)
 const trackDonate = () => {
    
   event('donate_event', {
-    'event_category': "top nav click",
+    'event_category': "top_nav_click",
     'event_label': "donate_click",
     'value': 1
   })
