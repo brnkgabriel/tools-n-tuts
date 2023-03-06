@@ -41,12 +41,12 @@ watch(searchTerm, () => {
 })
 
 const setToolAndTrack = (tool: iTool) => {
+  setTool(tool)
   event('tool_click', {
     'event_category': tool.category,
     'event_label': tool.name,
     'value': 1
   })
-  setTool(tool)
 }
 
 const options = { path: "" }

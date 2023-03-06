@@ -1,6 +1,6 @@
 <template>
   <div class="cell bottomnav" :style="style">
-    <div class="nav" v-for="(cat, idx) in globalState.categories" :key="idx" @click="selectTools(cat)">
+    <div class="nav" v-for="(cat, idx) in globalState.categories" :key="idx" @click="selectToolsAndTrack(cat)">
       <component :is="comp(cat)"></component>
       <div class="tabname text-xxs font-semibold">{{cat}}</div>
     </div>
@@ -15,6 +15,9 @@ import Utilities from './tabs/Utilities.vue';
 import Coding from './tabs/Coding.vue'
 import Home from './tabs/Home.vue';
 import { iTool } from '../types';
+import { useGtag } from "vue-gtag-next"
+
+const { event } = useGtag()
 
 const { globalState, setSelectedTools, setTool } = useGlobals()
 
@@ -32,11 +35,16 @@ const comp = (category: string) => {
   }
 }
 
-const selectTools = (category: string) => {
+const selectToolsAndTrack = (category: string) => {
   const query = category === "Home" ? "" : category
   setTool(defaultTool)
   const selectedTools = globalState.value.tools.filter((tool: iTool) => tool.category.indexOf(query) !== -1)
   setSelectedTools(selectedTools)
+  event('tab_event', {
+    'event_category': category,
+    'event_label': "tab_click",
+    'value': 1
+  })
 }
 
 </script> 
