@@ -1,5 +1,5 @@
 <template>
-  <div class="cell bottomnav">
+  <div class="cell bottomnav" :style="style">
     <div class="nav" v-for="(cat, idx) in globalState.categories" :key="idx" @click="selectTools(cat)">
       <component :is="comp(cat)"></component>
       <div class="tabname text-xxs font-semibold">{{cat}}</div>
@@ -17,6 +17,8 @@ import Home from './tabs/Home.vue';
 import { iTool } from '../types';
 
 const { globalState, setSelectedTools, setTool } = useGlobals()
+
+const style = computed(() => `background-color:${globalState.value.tool.bg_color};color:${globalState.value.tool.font_color}`)
 
 const comp = (category: string) => {
   switch (category) {

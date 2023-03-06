@@ -5,7 +5,7 @@
 
 const { globalState } = useGlobals()
 
-const styleStr = (fo: string) => `fill:${globalState.value.tool.bg_color};fill-opacity:${fo};stroke-width:0.157144`
+const styleStr = (fo: string) => `fill:${globalState.value.tool.font_color};fill-opacity:${fo};stroke-width:0.157144`
 
 const style100 = computed(() => styleStr("1"))
 const style60 = computed(() => styleStr("0.6"))

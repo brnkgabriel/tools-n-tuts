@@ -5,7 +5,7 @@
 
 const { globalState } = useGlobals()
 
-const style = computed(() => `fill:${globalState.value.tool.bg_color};stroke-width:0.016531`) 
+const style = computed(() => `fill:${globalState.value.tool.font_color};stroke-width:0.016531`) 
 </script>
 <style lang="">
   

@@ -3,5 +3,5 @@
 </template>
 <script setup lang="ts">
 const { globalState } = useGlobals()
-const style = computed(() => `fill:${globalState.value.tool.bg_color};stroke-width:0.64084`) 
+const style = computed(() => `fill:${globalState.value.tool.font_color};stroke-width:0.64084`) 
 </script>
