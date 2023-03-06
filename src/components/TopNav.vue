@@ -8,7 +8,7 @@
       </div>
     </NuxtLink>
 
-    <NuxtLink href="/donate" :class="btn" :style="style">
+    <NuxtLink href="/donate" :class="btn" :style="style" @click="trackDonate">
       <Donate />
     </NuxtLink>
   </div>
@@ -16,6 +16,9 @@
 <script setup lang="ts">
 
 import Donate from './icons/Donate.vue';
+import { useGtag } from "vue-gtag-next"
+
+const { event } = useGtag()
 
 const {
   topnavwrap,
@@ -27,6 +30,15 @@ const { globalState, setTool } = useGlobals()
 const style = computed(() => `background-color:${globalState.value.tool.bg_color};color:white`)
 
 const setDefaultTool = () => setTool(defaultTool)
+
+const trackDonate = () => {
+   
+  event('donate_event', {
+    'event_category': "top nav click",
+    'event_label': "donate_click",
+    'value': 1
+  })
+}
 
 const props = defineProps<{
   avatar?: string
