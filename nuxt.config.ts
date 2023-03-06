@@ -18,14 +18,14 @@ export default {
     '@kevinmarrec/nuxt-pwa',
     '@pinia/nuxt',
     '@nuxt/image-edge',
-    '@nuxtjs/supabase',
+    '@nuxtjs/supabase', 
   ],
   pwa: {
     workbox: {
       // the way to enable pwa is to remove "enabled: false" from below
       // enabled: false
     },
-  },
+  }, 
   env: {
     googleAnalyticsId: process.env.GOOGLE_ANALYTICS_ID
   },

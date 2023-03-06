@@ -6,7 +6,8 @@
         placeholder="Search for tool" v-model="searchTerm" />
     </div>
     <div v-if="isLoaded" class="-tpane thumbnails">
-      <Tool class="thumb" v-for="(tool, idx) in globalState?.selectedTools" :key="idx" :tool="tool" @click="setTool(tool)" />
+      <Tool class="thumb" v-for="(tool, idx) in globalState?.selectedTools" :key="idx" :tool="tool"
+        @click="setToolAndTrack(tool)" />
     </div>
     <ComboBoxSkeleton v-if="!isLoaded" class="search flex items-center" />
     <div v-if="!isLoaded" class="thumbnails">
@@ -16,6 +17,10 @@
 </template>
 <script setup lang="ts">
 import { iGlobal, iTool } from '../types';
+
+import { useGtag } from "vue-gtag-next"
+
+const { event } = useGtag()
 
 const {
   setTools, setTuts, globalState,
@@ -34,6 +39,15 @@ watch(searchTerm, () => {
   })
   setSelectedTools(found)
 })
+
+const setToolAndTrack = (tool: iTool) => {
+  event('tool_click', {
+    'event_category': tool.category,
+    'event_label': tool.name,
+    'value': 1
+  })
+  setTool(tool)
+}
 
 const options = { path: "" }
 const { data, refresh } = await useLazyFetch(() => constants.toolsnTutsApi, { params: { ...options } })
