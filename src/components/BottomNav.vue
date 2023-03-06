@@ -41,7 +41,7 @@ const selectTools = (category: string) => {
 <style>
   .bottomnav {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     column-gap: 8px;
   }
