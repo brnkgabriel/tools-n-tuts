@@ -41,7 +41,7 @@ watch(searchTerm, () => {
 })
 
 const setToolAndTrack = (tool: iTool) => {
-  event('tool_event', {
+  event('tool_click', {
     'event_category': tool.category,
     'event_label': tool.name,
     'value': 1
