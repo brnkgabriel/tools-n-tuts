@@ -24,6 +24,7 @@
     "vitest": "^0.25.8"
   },
   "dependencies": {
+    "@gtm-support/vue-gtm": "^2.0.0",
     "@headlessui/vue": "^1.7.7",
     "@heroicons/vue": "^2.0.13",
     "@paypal/paypal-js": "^5.1.4",

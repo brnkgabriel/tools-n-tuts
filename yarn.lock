@@ -558,6 +558,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@gtm-support/core@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@gtm-support/core@npm:2.0.0"
+  checksum: 8ad20db5b75df622b4edd00ab15cdf5299b4326caa04ce885947414993c2d0b57d82ff50fc5c3fde037110186c1010d9327f8c70f869a9dd2cf84c52d31feb84
+  languageName: node
+  linkType: hard
+
+"@gtm-support/vue-gtm@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@gtm-support/vue-gtm@npm:2.0.0"
+  dependencies:
+    "@gtm-support/core": ^2.0.0
+    vue-router: ^4.1.0
+  peerDependencies:
+    vue: ^3.2.0
+  dependenciesMeta:
+    vue-router:
+      optional: true
+  peerDependenciesMeta:
+    vue-router:
+      optional: true
+  checksum: 130161d94d2f778b6ef6a7a7c935cea9998a2a79a0b0bfdb170c0371b6baadea046b6cde509c302129d7da2d4813e2f064007dbd63764cba4d7880df82d08cb8
+  languageName: node
+  linkType: hard
+
 "@headlessui/vue@npm:^1.7.7":
   version: 1.7.7
   resolution: "@headlessui/vue@npm:1.7.7"
@@ -7834,6 +7859,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "toolsntuts@workspace:."
   dependencies:
+    "@gtm-support/vue-gtm": ^2.0.0
     "@headlessui/vue": ^1.7.7
     "@heroicons/vue": ^2.0.13
     "@kevinmarrec/nuxt-pwa": ^0.13.0
@@ -8457,7 +8483,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-router@npm:^4.1.6":
+"vue-router@npm:^4.1.0, vue-router@npm:^4.1.6":
   version: 4.1.6
   resolution: "vue-router@npm:4.1.6"
   dependencies:

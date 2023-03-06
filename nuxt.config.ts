@@ -28,5 +28,5 @@ export default {
   },
   env: {
     googleAnalyticsId: process.env.GOOGLE_ANALYTICS_ID
-  }
+  },
 }
